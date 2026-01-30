@@ -1,0 +1,12 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend of College Predictor",
+  "license": "ISC",
+  "author": "Anubhab Chowdhury",
+  "type": "modular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
