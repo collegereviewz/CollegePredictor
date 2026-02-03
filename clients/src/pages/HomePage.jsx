@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { predictColleges } from "../api/predict";
 
 const INDIA_STATES = [
   "Andhra Pradesh",
@@ -35,10 +36,22 @@ const HomePage = () => {
   const [step, setStep] = useState(1);
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [selectedExam, setSelectedExam] = useState(null);
+  const [counselling, setCounselling] = useState("JOSAA");
+
 
   const [rank, setRank] = useState("");
   const [category, setCategory] = useState("GEN");
   const [domicile, setDomicile] = useState("");
+  const [results, setResults] = useState([]);
+  const [loading, setLoading] = useState(false);
+  // 🔹 FILTER STATES
+  const [filterChance, setFilterChance] = useState(["Safe", "Moderate"]);
+  const [filterQuota, setFilterQuota] = useState(["AI", "HS"]);
+  const [filterBranch, setFilterBranch] = useState([]);
+  const [filterLocation, setFilterLocation] = useState([]);
+  const [showResults, setShowResults] = useState(false);
+
+
 
   const courses = [
     {
@@ -131,6 +144,13 @@ const HomePage = () => {
   const currentCourse = courses.find((c) => c.key === selectedCourse);
   const currentExams = selectedCourse ? examsByCourse[selectedCourse] || [] : [];
 
+  // 🔹 Extract city/location from institute name
+  const extractLocation = (institute = "") => {
+    const parts = institute.split(",");
+    return parts.length > 1 ? parts[parts.length - 1].trim() : institute.trim();
+  };
+
+
   const handleCourseClick = (course) => {
     setSelectedCourse(course.key);
     setSelectedExam(null);
@@ -142,16 +162,116 @@ const HomePage = () => {
     setStep(3);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(
-      `Submitted:\nCourse: ${selectedCourse}\nExam: ${selectedExam}\nRank: ${rank}\nCategory: ${category}\nDomicile: ${domicile}`
-    );
+
+    setLoading(true);
+
+    try {
+      const payload = {
+        rank: Number(rank),
+        category:
+          category === "GEN"
+            ? "OPEN"
+            : category === "GEN-EWS"
+              ? "EWS"
+              : category,
+        gender: "Gender-Neutral", // you can extend later
+        domicile,
+        counselling: "JOSAA", // later toggle CSAB
+        rounds: counselling === "CSAB" ? [1, 2, 3] : [1, 2, 3, 4, 5, 6],
+      };
+
+      const data = await predictColleges(payload);
+      setResults(data);
+      setShowResults(true);   // 👈 THIS HIDES THE FORM
+
+
+      console.log("Prediction results:", data);
+    } catch (err) {
+      console.error(err);
+      alert("Failed to fetch predictions");
+    } finally {
+      setLoading(false);
+    }
   };
+  const groupedResults = Object.values(
+    results.reduce((acc, row) => {
+      const key = `${row.institute}__${row.academicProgram}__${row.quota}`;
+
+      if (!acc[key]) {
+        acc[key] = {
+          ...row,
+          rounds: [row.round],
+          openingRank: row.openingRank,
+          closingRank: row.closingRank,
+        };
+      } else {
+        acc[key].rounds.push(row.round);
+        acc[key].openingRank = Math.min(acc[key].openingRank, row.openingRank);
+        acc[key].closingRank = Math.max(acc[key].closingRank, row.closingRank);
+      }
+
+      return acc;
+    }, {})
+  );
+  // const finalResults = groupedResults.map(row => {
+  //   let chance = "Dream";
+
+  //   if (rank <= row.closingRank * 0.7) chance = "Safe";
+  //   else if (rank <= row.closingRank) chance = "Moderate";
+
+  //   return {
+  //     ...row,
+  //     chance
+  //   };
+  // });
+  const finalResults = groupedResults
+    .map(row => {
+      let chance = "Dream";
+
+      if (rank <= row.closingRank * 0.7) chance = "Safe";
+      else if (rank <= row.closingRank) chance = "Moderate";
+
+      return { ...row, chance };
+    })
+    // 🔹 FILTERING
+    .filter(row => {
+      if (!filterChance.includes(row.chance)) return false;
+      if (filterQuota.length && !filterQuota.includes(row.quota)) return false;
+      if (filterBranch.length > 0 && !filterBranch.includes(row.academicProgram)) return false;
+      const rowLocation = extractLocation(row.institute);
+
+      if (
+        filterLocation.length > 0 &&
+        !filterLocation.includes(rowLocation)
+      ) return false;
+
+
+      return true;
+    })
+    // 🔹 SORT: SAFE → MODERATE → DREAM
+    .sort((a, b) => {
+      const order = { Safe: 1, Moderate: 2, Dream: 3 };
+      return order[a.chance] - order[b.chance];
+    });
+
+  const branchOptions = Array.from(
+    new Set(results.map(r => r.academicProgram))
+  ).sort();
+
+  const locationOptions = Array.from(
+    new Set(results.map(r => extractLocation(r.institute)))
+  ).sort();
+
+
+
+
+
 
   return (
-    
-<div className="min-h-screen bg-slate-100">
+
+    <div className="min-h-screen bg-slate-100">
       {/* Top banner */}
       <header className="bg-gradient-to-r from-emerald-700 to-blue-700 text-white">
         <div className="max-w-6xl mx-auto px-6 py-10">
@@ -169,17 +289,16 @@ const HomePage = () => {
         <div className="rounded-xl bg-white shadow-md border border-slate-100 overflow-hidden">
           <div className="grid grid-cols-12">
             {/* Left stepper */}
-            <aside className="col-span-12 md:col-span-3 border-r border-slate-100 bg-slate-50">
+            {/* <aside className="col-span-12 md:col-span-3 border-r border-slate-100 bg-slate-50">
               <div className="px-6 py-8">
                 <ol className="space-y-8 text-sm">
                   <li className="flex items-start gap-4">
                     <div className="flex flex-col items-center">
                       <span
-                        className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-semibold ${
-                          step === 1
-                            ? "bg-blue-600 text-white"
-                            : "bg-white text-slate-700 border border-slate-300"
-                        }`}
+                        className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-semibold ${step === 1
+                          ? "bg-blue-600 text-white"
+                          : "bg-white text-slate-700 border border-slate-300"
+                          }`}
                       >
                         1
                       </span>
@@ -195,11 +314,10 @@ const HomePage = () => {
                   <li className="flex items-start gap-4">
                     <div className="flex flex-col items-center">
                       <span
-                        className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-semibold ${
-                          step === 2 || step === 3
-                            ? "bg-blue-600 text-white"
-                            : "bg-white text-slate-700 border border-slate-300"
-                        }`}
+                        className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-semibold ${step === 2 || step === 3
+                          ? "bg-blue-600 text-white"
+                          : "bg-white text-slate-700 border border-slate-300"
+                          }`}
                       >
                         2
                       </span>
@@ -213,11 +331,10 @@ const HomePage = () => {
                   <li className="flex items-start gap-4">
                     <div className="flex flex-col items-center">
                       <span
-                        className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-semibold ${
-                          step === 3
-                            ? "bg-blue-600 text-white"
-                            : "bg-white text-slate-700 border border-slate-300"
-                        }`}
+                        className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-semibold ${step === 3
+                          ? "bg-blue-600 text-white"
+                          : "bg-white text-slate-700 border border-slate-300"
+                          }`}
                       >
                         3
                       </span>
@@ -228,7 +345,160 @@ const HomePage = () => {
                   </li>
                 </ol>
               </div>
+            </aside> */}
+
+            {/* Left stepper + Filters */}
+            <aside className="col-span-12 md:col-span-3 border-r border-slate-100 bg-slate-50">
+              <div className="px-6 py-8">
+
+                {/* Stepper (unchanged) */}
+                <ol className="space-y-8 text-sm font-semibold text-slate-900">
+                  Tailor your choices
+                </ol>
+
+                {/* 🔽 ADD THIS BELOW STEPPER */}
+                {showResults && (
+                  <div className="mt-10 border-t pt-6">
+                    {/* <h4 className="text-sm font-semibold text-slate-900 mb-4">
+                      Filters
+                    </h4> */}
+
+                    {/* 👇 PUT YOUR FILTER CODE HERE */}
+                    <div className="space-y-6 text-sm">
+
+                      {/* Chance Filter */}
+                      <div>
+                        <p className="font-semibold text-slate-800 mb-2">Chance</p>
+                        {["Safe", "Moderate"].map(c => (
+                          <label key={c} className="flex items-center gap-2">
+                            <input
+                              type="checkbox"
+                              checked={filterChance.includes(c)}
+                              onChange={() =>
+                                setFilterChance(prev =>
+                                  prev.includes(c)
+                                    ? prev.filter(x => x !== c)
+                                    : [...prev, c]
+                                )
+                              }
+                            />
+                            {c}
+                          </label>
+                        ))}
+                      </div>
+
+                      {/* Quota Filter */}
+                      <div>
+                        <p className="font-semibold text-slate-800 mb-2">Quota</p>
+                        {["HS", "AI"].map(q => (
+                          <label key={q} className="flex items-center gap-2">
+                            <input
+                              type="checkbox"
+                              checked={filterQuota.includes(q)}
+                              onChange={() =>
+                                setFilterQuota(prev =>
+                                  prev.includes(q)
+                                    ? prev.filter(x => x !== q)
+                                    : [...prev, q]
+                                )
+                              }
+                            />
+                            {q}
+                          </label>
+                        ))}
+                      </div>
+
+                      {/* Branch Filter */}
+                      <div>
+                        <p className="font-semibold text-slate-800 mb-2">Branch</p>
+
+                        <div className="max-h-44 overflow-y-auto rounded-md border border-blue-200 bg-white px-2 py-2 space-y-1">
+
+                          {/* ALL option */}
+                          <label className="flex items-center gap-2 text-xs font-semibold text-blue-600 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              checked={filterBranch.length === 0}
+                              onChange={() => setFilterBranch([])}
+                            />
+                            All
+                          </label>
+
+                          {/* Branch options */}
+                          {branchOptions.map(branch => (
+                            <label
+                              key={branch}
+                              className="flex items-start gap-2 text-xs text-slate-700 cursor-pointer"
+                            >
+                              <input
+                                type="checkbox"
+                                checked={filterBranch.includes(branch)}
+                                onChange={() =>
+                                  setFilterBranch(prev =>
+                                    prev.includes(branch)
+                                      ? prev.filter(b => b !== branch)
+                                      : [...prev, branch]
+                                  )
+                                }
+                              />
+                              <span className="leading-snug break-words">
+                                {branch}
+                              </span>
+                            </label>
+                          ))}
+                        </div>
+                      </div>
+
+
+                      {/* Location Filter */}
+                      <div>
+                        <p className="font-semibold text-slate-800 mb-2">Location</p>
+
+                        <div className="max-h-44 overflow-y-auto rounded-md border border-blue-200 bg-white px-2 py-2 space-y-1">
+
+                          {/* ALL option */}
+                          <label className="flex items-center gap-2 text-xs font-semibold text-blue-600 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              checked={filterLocation.length === 0}
+                              onChange={() => setFilterLocation([])}
+                            />
+                            All
+                          </label>
+
+                          {/* Location options */}
+                          {locationOptions.map(loc => (
+                            <label
+                              key={loc}
+                              className="flex items-start gap-2 text-xs text-slate-700 cursor-pointer"
+                            >
+                              <input
+                                type="checkbox"
+                                checked={filterLocation.includes(loc)}
+                                onChange={() =>
+                                  setFilterLocation(prev =>
+                                    prev.includes(loc)
+                                      ? prev.filter(l => l !== loc)
+                                      : [...prev, loc]
+                                  )
+                                }
+                              />
+                              <span className="leading-snug">
+                                {loc}
+                              </span>
+                            </label>
+                          ))}
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                )}
+
+              </div>
             </aside>
+
 
             {/* Right content */}
             <section className="col-span-12 md:col-span-9">
@@ -323,7 +593,7 @@ const HomePage = () => {
                 )}
 
                 {/* STEP 3: Form */}
-                {step === 3 && (
+                {step === 3 && !showResults && (
                   <form
                     onSubmit={handleSubmit}
                     className="mt-2 max-w-md space-y-5"
@@ -378,7 +648,6 @@ const HomePage = () => {
                         <option value="OBC-NCL">OBC – NCL</option>
                         <option value="SC">SC</option>
                         <option value="ST">ST</option>
-                        <option value="PWD">PwD</option>
                       </select>
                     </div>
 
@@ -418,6 +687,165 @@ const HomePage = () => {
                     </div>
                   </form>
                 )}
+                {/* {results.length > 0 && (
+                  <div className="mt-8">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-4">
+                      Predicted Colleges ({groupedResults.length})
+                    </h3>
+
+                    <div className="overflow-x-auto border border-slate-200 rounded-lg">
+                      <table className="min-w-full text-sm">
+                        <thead className="bg-slate-100 text-slate-700">
+                          <tr>
+                            <th className="px-3 py-2 text-left">Institute</th>
+                            <th className="px-3 py-2 text-left">Branch</th>
+                            <th className="px-3 py-2 text-center">Quota</th>
+                            <th className="px-3 py-2 text-center">Round</th>
+                            <th className="px-3 py-2 text-center">OR</th>
+                            <th className="px-3 py-2 text-center">CR</th>
+                            <th className="px-3 py-2 text-center">Chance</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                        {finalResults.map((row, idx) => (
+                            <tr
+                              key={idx}
+                              className="border-t border-slate-200 hover:bg-slate-50"
+                            >
+                              <td className="px-3 py-2 font-medium text-slate-900">
+                                {row.institute}
+                              </td>
+
+                              <td className="px-3 py-2 text-slate-700">
+                                {row.academicProgram}
+                              </td>
+
+                              <td className="px-3 py-2 text-center">
+                                <span
+                                  className={`px-2 py-0.5 rounded-full text-xs font-medium ${row.quota === "HS"
+                                    ? "bg-green-100 text-green-700"
+                                    : "bg-blue-100 text-blue-700"
+                                    }`}
+                                >
+                                  {row.quota}
+                                </span>
+                              </td>
+
+                              <td className="px-3 py-2 text-center">
+                                {Math.min(...row.rounds)}–{Math.max(...row.rounds)}
+                              </td>
+
+                              <td className="px-3 py-2 text-center">
+                                {row.openingRank}
+                              </td>
+
+                              <td className="px-3 py-2 text-center">
+                                {row.closingRank}
+                              </td>
+
+                              <td className="px-3 py-2 text-center">
+                                <span
+                                  className={`px-2 py-0.5 rounded-full text-xs font-semibold ${row.chance === "Safe"
+                                    ? "bg-emerald-100 text-emerald-700"
+                                    : row.chance === "Moderate"
+                                      ? "bg-amber-100 text-amber-700"
+                                      : "bg-rose-100 text-rose-700"
+                                    }`}
+                                >
+                                  {row.chance}
+                                </span>
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                )} */}
+                {showResults && (
+                  finalResults.length === 0 ? (
+                    <div className="text-center py-20 text-slate-500">
+                      <p className="text-lg font-semibold">No results found</p>
+                      <p className="text-sm mt-2">
+                        Try changing filters, quota, or rank.
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {finalResults.map((row, idx) => (
+
+
+                        <div
+                          key={idx}
+                          className="border border-slate-200 rounded-lg p-5 bg-white shadow-sm hover:shadow-md transition"
+                        >
+                          {/* Institute */}
+                          <h4 className="font-semibold text-slate-900 text-base">
+                            {row.institute}
+                          </h4>
+
+                          {/* Branch */}
+                          <p className="mt-1 text-sm text-blue-700 font-medium">
+                            {row.academicProgram}
+                          </p>
+
+                          {/* Meta row */}
+                          <div className="flex flex-wrap items-center gap-3 mt-3 text-xs text-slate-600">
+                            <span className="px-2 py-0.5 border rounded">
+                              JEE Main
+                            </span>
+
+                            <span>
+                              Rounds {Math.min(...row.rounds)}–{Math.max(...row.rounds)}
+                            </span>
+
+                            <span
+                              className={`px-2 py-0.5 rounded-full font-medium ${row.quota === "HS"
+                                ? "bg-green-100 text-green-700"
+                                : "bg-blue-100 text-blue-700"
+                                }`}
+                            >
+                              {row.quota}
+                            </span>
+                          </div>
+
+                          {/* Cutoff */}
+                          <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                              <p className="text-slate-500 text-xs">Opening Rank</p>
+                              <p className="font-semibold text-slate-900">{row.openingRank}</p>
+                            </div>
+
+                            <div>
+                              <p className="text-slate-500 text-xs">Closing Rank</p>
+                              <p className="font-semibold text-slate-900">{row.closingRank}</p>
+                            </div>
+                          </div>
+
+                          {/* Footer */}
+                          <div className="mt-4 flex items-center justify-between">
+                            <span
+                              className={`px-3 py-1 rounded-full text-xs font-semibold ${row.chance === "Safe"
+                                ? "bg-emerald-100 text-emerald-700"
+                                : row.chance === "Moderate"
+                                  ? "bg-amber-100 text-amber-700"
+                                  : "bg-rose-100 text-rose-700"
+                                }`}
+                            >
+                              {row.chance}
+                            </span>
+
+                            <button className="text-sm text-blue-600 hover:underline">
+                              View details →
+                            </button>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+
+
               </div>
             </section>
           </div>

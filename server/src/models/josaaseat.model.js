@@ -4,9 +4,15 @@ const JosaaSeatSchema = new mongoose.Schema({
   institute: String,
   academicProgram: String,
 
-  quota: String,
-  seatType: String,
-  gender: String,
+  instituteType: {
+    type: String, // IIT | NIT | IIIT | GFTI
+  },
+
+  quota: String,        // AI | HS
+  domicileState: String, // Required for HS
+
+  seatType: String,     // OPEN | EWS | OBC-NCL | SC | ST | PwD
+  gender: String,       // Gender-Neutral | Female-only
 
   openingRank: Number,
   closingRank: Number,
@@ -14,7 +20,13 @@ const JosaaSeatSchema = new mongoose.Schema({
   round: Number,
   year: Number,
   exam: String,
-  course: String
+  course: String,
+
+  counselling: {
+    type: String,
+    enum: ["JOSAA", "CSAB","BOTH"],
+    required: true
+  }
 });
 
 export default mongoose.model("JosaaSeat", JosaaSeatSchema);

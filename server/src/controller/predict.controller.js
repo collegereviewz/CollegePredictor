@@ -6,18 +6,30 @@ export const predictColleges = async (req, res) => {
       rank,
       category,
       gender,
-      rounds = [1, 2, 3]
+      domicile,
+      counselling = "JOSAA",
+      rounds
     } = req.body;
 
-    const results = await JosaaSeat.find({
+    const query = {
       exam: "JEE_MAIN",
       course: "BTech",
       year: 2025,
+
+      counselling, // 🔥 THIS WAS MISSING
+
       seatType: category,
       gender: { $in: [gender, "Gender-Neutral"] },
       round: { $in: rounds },
-      closingRank: { $gte: rank }
-    }).sort({ closingRank: 1 });
+      closingRank: { $gte: rank },
+
+      $or: [
+        { quota: "AI" },
+        { quota: "HS", domicileState: domicile }
+      ]
+    };
+
+    const results = await JosaaSeat.find(query).sort({ closingRank: 1 });
 
     const formatted = results.map(r => {
       let chance = "Dream";
@@ -27,17 +39,21 @@ export const predictColleges = async (req, res) => {
       return {
         institute: r.institute,
         academicProgram: r.academicProgram,
+        quota: r.quota,
+        domicileState: r.domicileState,
         round: r.round,
         openingRank: r.openingRank,
         closingRank: r.closingRank,
         seatType: r.seatType,
         gender: r.gender,
+        counselling: r.counselling,
         chance
       };
     });
 
     res.json(formatted);
   } catch (err) {
+    console.error(err);
     res.status(500).json({ error: err.message });
   }
 };
