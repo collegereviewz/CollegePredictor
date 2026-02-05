@@ -170,6 +170,7 @@ const HomePage = () => {
     try {
       const payload = {
         rank: Number(rank),
+        exam: selectedExam,
         category:
           category === "GEN"
             ? "OPEN"
@@ -181,6 +182,7 @@ const HomePage = () => {
         counselling: "JOSAA", // later toggle CSAB
         rounds: counselling === "CSAB" ? [1, 2, 3] : [1, 2, 3, 4, 5, 6],
       };
+      console.log(payload);
 
       const data = await predictColleges(payload);
       setResults(data);
@@ -214,6 +216,8 @@ const HomePage = () => {
 
       return acc;
     }, {})
+
+
   );
   // const finalResults = groupedResults.map(row => {
   //   let chance = "Dream";
@@ -263,6 +267,13 @@ const HomePage = () => {
   const locationOptions = Array.from(
     new Set(results.map(r => extractLocation(r.institute)))
   ).sort();
+
+
+  const handleBackToExams = () => {
+    setShowResults(false);   // hide results
+    setResults([]);          // optional but clean
+    setStep(2);              // go back to exam selection
+  };
 
 
 
@@ -764,86 +775,97 @@ const HomePage = () => {
                   </div>
                 )} */}
                 {showResults && (
-                  finalResults.length === 0 ? (
-                    <div className="text-center py-20 text-slate-500">
-                      <p className="text-lg font-semibold">No results found</p>
-                      <p className="text-sm mt-2">
-                        Try changing filters, quota, or rank.
-                      </p>
-                    </div>
-                  ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {finalResults.map((row, idx) => (
+                  <>
+                    {/* 🔙 BACK TO EXAMS BUTTON */}
+                    <button
+                      onClick={handleBackToExams}
+                      className="mb-6 text-sm text-blue-600 hover:underline flex items-center"
+                    >
+                      ← Back to exams
+                    </button>
 
+                    {finalResults.length === 0 ? (
+                      <div className="text-center py-20 text-slate-500">
+                        <p className="text-lg font-semibold">No results found</p>
+                        <p className="text-sm mt-2">
+                          Try changing filters, quota, or rank.
+                        </p>
+                      </div>
+                    ) : (
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {finalResults.map((row, idx) => (
+                          <div
+                            key={idx}
+                            className="border border-slate-200 rounded-lg p-5 bg-white shadow-sm hover:shadow-md transition"
+                          >
+                            {/* Institute */}
+                            <h4 className="font-semibold text-slate-900 text-base">
+                              {row.institute}
+                            </h4>
 
-                        <div
-                          key={idx}
-                          className="border border-slate-200 rounded-lg p-5 bg-white shadow-sm hover:shadow-md transition"
-                        >
-                          {/* Institute */}
-                          <h4 className="font-semibold text-slate-900 text-base">
-                            {row.institute}
-                          </h4>
+                            {/* Branch */}
+                            <p className="mt-1 text-sm text-blue-700 font-medium">
+                              {row.academicProgram}
+                            </p>
 
-                          {/* Branch */}
-                          <p className="mt-1 text-sm text-blue-700 font-medium">
-                            {row.academicProgram}
-                          </p>
+                            {/* Meta */}
+                            <div className="flex flex-wrap items-center gap-3 mt-3 text-xs text-slate-600">
+                              <span className="px-2 py-0.5 border rounded">
+                                {selectedExam === "WBJEE"
+                                  ? "WBJEE"
+                                  : selectedExam === "JEE_ADV"
+                                    ? "JEE Advanced"
+                                    : "JEE Main"}
+                              </span>
 
-                          {/* Meta row */}
-                          <div className="flex flex-wrap items-center gap-3 mt-3 text-xs text-slate-600">
-                            <span className="px-2 py-0.5 border rounded">
-                              JEE Main
-                            </span>
-
-                            <span>
-                              Rounds {Math.min(...row.rounds)}–{Math.max(...row.rounds)}
-                            </span>
-
-                            <span
-                              className={`px-2 py-0.5 rounded-full font-medium ${row.quota === "HS"
-                                ? "bg-green-100 text-green-700"
-                                : "bg-blue-100 text-blue-700"
-                                }`}
-                            >
-                              {row.quota}
-                            </span>
-                          </div>
-
-                          {/* Cutoff */}
-                          <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
-                            <div>
-                              <p className="text-slate-500 text-xs">Opening Rank</p>
-                              <p className="font-semibold text-slate-900">{row.openingRank}</p>
+                              <span
+                                className={`px-2 py-0.5 rounded-full font-medium ${row.quota === "HS"
+                                    ? "bg-green-100 text-green-700"
+                                    : "bg-blue-100 text-blue-700"
+                                  }`}
+                              >
+                                {row.quota}
+                              </span>
                             </div>
 
-                            <div>
-                              <p className="text-slate-500 text-xs">Closing Rank</p>
-                              <p className="font-semibold text-slate-900">{row.closingRank}</p>
+                            {/* Cutoff */}
+                            <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
+                              <div>
+                                <p className="text-slate-500 text-xs">Opening Rank</p>
+                                <p className="font-semibold text-slate-900">
+                                  {row.openingRank}
+                                </p>
+                              </div>
+
+                              <div>
+                                <p className="text-slate-500 text-xs">Closing Rank</p>
+                                <p className="font-semibold text-slate-900">
+                                  {row.closingRank}
+                                </p>
+                              </div>
+                            </div>
+
+                            {/* Chance */}
+                            <div className="mt-4">
+                              <span
+                                className={`px-3 py-1 rounded-full text-xs font-semibold ${row.chance === "Safe"
+                                    ? "bg-emerald-100 text-emerald-700"
+                                    : row.chance === "Moderate"
+                                      ? "bg-amber-100 text-amber-700"
+                                      : "bg-rose-100 text-rose-700"
+                                  }`}
+                              >
+                                {row.chance}
+                              </span>
                             </div>
                           </div>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                )}
 
-                          {/* Footer */}
-                          <div className="mt-4 flex items-center justify-between">
-                            <span
-                              className={`px-3 py-1 rounded-full text-xs font-semibold ${row.chance === "Safe"
-                                ? "bg-emerald-100 text-emerald-700"
-                                : row.chance === "Moderate"
-                                  ? "bg-amber-100 text-amber-700"
-                                  : "bg-rose-100 text-rose-700"
-                                }`}
-                            >
-                              {row.chance}
-                            </span>
 
-                            <button className="text-sm text-blue-600 hover:underline">
-                              View details →
-                            </button>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  ))}
 
 
               </div>

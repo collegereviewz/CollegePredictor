@@ -89,6 +89,7 @@ const run = async () => {
           year: 2025,
           exam: "JEE_MAIN",
           course: "BTech",
+          counselling: "CSAB"
         });
       }
 

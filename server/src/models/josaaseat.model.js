@@ -24,7 +24,7 @@ const JosaaSeatSchema = new mongoose.Schema({
 
   counselling: {
     type: String,
-    enum: ["JOSAA", "CSAB","BOTH"],
+    enum: ["JOSAA", "CSAB","WBJEE"],
     required: true
   }
 });

@@ -33,7 +33,6 @@ const files = [
   { file: "josaa_round4.csv", round: 4 },
   { file: "josaa_round5.csv", round: 5 },
   { file: "josaa_round6.csv", round: 6 },
-  
 ];
 
 // -----------------------------
@@ -93,7 +92,8 @@ const run = async () => {
           round: f.round,
           year: 2025,
           exam: "JEE_MAIN",
-          course: "BTech"
+          course: "BTech",
+          counselling: "JOSAA"  // 🔥 Added: Required by model schema
         });
       }
 
