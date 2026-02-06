@@ -4,6 +4,9 @@ import path from "path"
 import cors from "cors"
 import {connectDB} from "./db/db.js"
 import predictRoutes from "./routes/predict.route.js";
+import wbjeeRoutes from "./routes/wbjee.route.js"; 
+
+
 
 
 
@@ -25,6 +28,8 @@ app.use(cors({
 app.use(express.json());
 
 app.use("/api", predictRoutes);
+app.use("/api/wbjee", wbjeeRoutes);
+
 
 
 

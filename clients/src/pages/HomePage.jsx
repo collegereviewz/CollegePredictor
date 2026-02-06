@@ -51,6 +51,10 @@ const HomePage = () => {
   const [filterLocation, setFilterLocation] = useState([]);
   const [showResults, setShowResults] = useState(false);
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 20;
+
+
 
 
   const courses = [
@@ -177,18 +181,35 @@ const HomePage = () => {
             : category === "GEN-EWS"
               ? "EWS"
               : category,
-        gender: "Gender-Neutral", // you can extend later
+        gender: "Gender-Neutral",
         domicile,
-        counselling: "JOSAA", // later toggle CSAB
+        counselling: "JOSAA",
         rounds: counselling === "CSAB" ? [1, 2, 3] : [1, 2, 3, 4, 5, 6],
       };
-      console.log(payload);
 
-      const data = await predictColleges(payload);
+      // ✅ WBJEE uses NEW endpoint + SIMPLIFIED payload (4 fields only)
+      let data;
+      if (selectedExam === "STATE_ENGG" || selectedExam === "WBJEE") {
+        const wbjeePayload = {
+          rank: Number(rank),
+          exam: "WBJEE",
+          category: category === "GEN" ? "Open" : category,
+          domicile
+        };
+        const res = await fetch('http://localhost:5000/api/wbjee/predict', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(wbjeePayload)
+        });
+        if (!res.ok) throw new Error('WBJEE prediction failed');
+        data = await res.json();
+      } else {
+        // JEE_MAIN/JEE_ADV use old endpoint
+        data = await predictColleges(payload);
+      }
+
       setResults(data);
-      setShowResults(true);   // 👈 THIS HIDES THE FORM
-
-
+      setShowResults(true);
       console.log("Prediction results:", data);
     } catch (err) {
       console.error(err);
@@ -197,6 +218,7 @@ const HomePage = () => {
       setLoading(false);
     }
   };
+
   const groupedResults = Object.values(
     results.reduce((acc, row) => {
       const key = `${row.institute}__${row.academicProgram}__${row.quota}`;
@@ -820,8 +842,8 @@ const HomePage = () => {
 
                               <span
                                 className={`px-2 py-0.5 rounded-full font-medium ${row.quota === "HS"
-                                    ? "bg-green-100 text-green-700"
-                                    : "bg-blue-100 text-blue-700"
+                                  ? "bg-green-100 text-green-700"
+                                  : "bg-blue-100 text-blue-700"
                                   }`}
                               >
                                 {row.quota}
@@ -849,10 +871,10 @@ const HomePage = () => {
                             <div className="mt-4">
                               <span
                                 className={`px-3 py-1 rounded-full text-xs font-semibold ${row.chance === "Safe"
-                                    ? "bg-emerald-100 text-emerald-700"
-                                    : row.chance === "Moderate"
-                                      ? "bg-amber-100 text-amber-700"
-                                      : "bg-rose-100 text-rose-700"
+                                  ? "bg-emerald-100 text-emerald-700"
+                                  : row.chance === "Moderate"
+                                    ? "bg-amber-100 text-amber-700"
+                                    : "bg-rose-100 text-rose-700"
                                   }`}
                               >
                                 {row.chance}

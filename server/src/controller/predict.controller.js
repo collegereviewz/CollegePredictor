@@ -16,6 +16,12 @@ export const predictColleges = async (req, res) => {
     if (!rank || !exam) {
       return res.status(400).json({ error: "rank and exam are required" });
     }
+    // normalize exam coming from frontend
+    const normalizedExam =
+      exam === "STATE_ENGG" || exam === "WBJEE / State CET"
+        ? "WBJEE"
+        : exam;
+
 
     // --------------------------------------------------
     // BASE QUERY (COMMON & SAFE)
@@ -68,18 +74,34 @@ export const predictColleges = async (req, res) => {
     }
 
     // 🟢 WBJEE → WBJEE COUNSELLING + WBJEE INSTITUTES
-    else if (exam === "WBJEE") {
-      query.exam = "WBJEE";
-      query.counselling = "WBJEE";
+    // else if (normalizedExam === "WBJEE") {
+    //   query.exam = "WBJEE";
+    //   query.counselling = "WBJEE";
+    //   query.instituteType = "WBJEE";
 
-      query.instituteType = "WBJEE";
+    //   // ✅ WBJEE HAS ONLY 2 ROUNDS
+    //   query.round = { $in: [1, 2] };
 
-      query.$or = [
-        { quota: "AI" },
-        { quota: "Home State" },
-        { quota: "Home State", domicileState: domicile }
-      ];
-    }
+    //   // ✅ WBJEE uses seatType like Open, SC, ST
+    //   if (category && category !== "ALL") {
+    //     query.seatType = category;
+    //   }
+
+    //   // ✅ DO NOT FILTER GENDER (WBJEE DATA IS CLEAN)
+    //   delete query.gender;
+
+    //   // ✅ SIMPLE QUOTA LOGIC
+    //   query.$or = [
+    //     { quota: "AI" },
+    //     { quota: "Home State" },
+    //     { quota: "WBJEE" }
+    //   ];
+    // }
+
+
+
+
+
 
     else {
       return res.status(400).json({ error: "Invalid exam type" });
@@ -93,7 +115,7 @@ export const predictColleges = async (req, res) => {
     const results = await JosaaSeat
       .find(query)
       .sort({ closingRank: 1 })
-      .limit(500);
+      .limit(100);
 
     console.log(`✅ Found ${results.length} results`);
 
