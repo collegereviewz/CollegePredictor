@@ -1,0 +1,879 @@
+Sr.No,Round ,Institute ,PG Program ,Group ,Category ,Max GATE Score ,Min GATE Score 
+1,National Spot Round,NIELIT Deemed to be University Itanagar,AI and Data Science,Group 1,OPEN,389,389
+2,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,IC Design and Technology,Group 1,EWS,330,330
+3,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,IC Design and Technology,Group 1,OPEN,440,358
+4,National Spot Round,"National Institute of Technology, Warangal",Electronics and Communication Engineering - Embedded & Machine Learning Systems (EMLS),Group 1,OBC-NCL,483,483
+5,National Spot Round,"National Institute of Technology, Warangal",Electronics and Communication Engineering - Embedded & Machine Learning Systems (EMLS),Group 1,EWS,499,499
+6,National Spot Round,"National Institute of Technology, Warangal",Electronics and Communication Engineering - Embedded & Machine Learning Systems (EMLS),Group 1,OPEN,514,510
+7,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,M.Tech. in Cyber Physical System,Group 1,OBC-NCL,406,330
+8,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,M.Tech. in Cyber Physical System,Group 1,EWS,331,331
+9,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,M.Tech. in Cyber Physical System,Group 1,OPEN,413,413
+10,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,M.Tech. in Cyber Physical System,Group 1,SC,314,271
+11,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Computer Science and Engineering,Group 1,OBC-NCL,469,450
+12,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Computer Science and Engineering,Group 1,EWS,464,464
+13,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Computer Science and Engineering,Group 1,OPEN,538,523
+14,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Machine Intelligence and Automation,Group 1,OBC-NCL,410,377
+15,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Machine Intelligence and Automation,Group 1,EWS,381,381
+16,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Machine Intelligence and Automation,Group 1,OPEN,450,440
+17,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Machine Intelligence and Automation,Group 1,SC,285,285
+18,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Mathematics and Computing,Group 1,OBC-NCL,417,413
+19,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Mathematics and Computing,Group 1,EWS,377,377
+20,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Mathematics and Computing,Group 1,OPEN,468,431
+21,National Spot Round,"National Institute of Technology, Jamshedpur",VLSI and Embedded Systems Engineering,Group 1,OBC-NCL,424,420
+22,National Spot Round,"National Institute of Technology, Jamshedpur",VLSI and Embedded Systems Engineering,Group 1,OPEN,492,440
+23,National Spot Round,"National Institute of Technology, Jamshedpur",Data Science and Engineering,Group 1,OBC-NCL,501,496
+24,National Spot Round,"National Institute of Technology, Jamshedpur",Data Science and Engineering,Group 1,EWS,495,495
+25,National Spot Round,"National Institute of Technology, Jamshedpur",Data Science and Engineering,Group 1,OPEN,548,537
+26,National Spot Round,National Institute of Technology Raipur,M.Tech in Power System & Power Electronics,Group 1,OPEN,523,523
+27,National Spot Round,"Indian Institute of Information Technology, Bhopal",M.Tech in Artificial Intelligence,Group 1,OBC-NCL,403,330
+28,National Spot Round,"Indian Institute of Information Technology, Bhopal",M.Tech in Artificial Intelligence,Group 1,EWS,377,335
+29,National Spot Round,"Indian Institute of Information Technology, Bhopal",M.Tech in Artificial Intelligence,Group 1,OPEN,498,426
+30,National Spot Round,"Indian Institute of Information Technology, Bhopal",M.Tech in Artificial Intelligence,Group 1,SC,299,261
+31,National Spot Round,"Indian Institute of Information Technology, Bhopal",M.Tech in Data Science,Group 1,OBC-NCL,352,321
+32,National Spot Round,"Indian Institute of Information Technology, Bhopal",M.Tech in Data Science,Group 1,EWS,360,360
+33,National Spot Round,"Indian Institute of Information Technology, Bhopal",M.Tech in Data Science,Group 1,OPEN,423,404
+34,National Spot Round,"Indian Institute of Information Technology, Bhopal",M.Tech in Data Science,Group 1,SC,260,211
+35,National Spot Round,"Indian Institute of Information Technology, Bhopal",M.Tech in Cyber Physical System,Group 1,OPEN,380,354
+36,National Spot Round,"National Institute of Technology, Rourkela",RF and Microwave systems,Group 1,OBC-NCL,416,416
+37,National Spot Round,"National Institute of Technology, Rourkela",RF and Microwave systems,Group 2,OBC-NCL,375,375
+38,National Spot Round,"National Institute of Technology, Rourkela",RF and Microwave systems,Group 3,OBC-NCL,362,362
+39,National Spot Round,"National Institute of Technology, Rourkela",RF and Microwave systems,Group 1,OPEN,444,444
+40,National Spot Round,"National Institute of Technology, Rourkela",RF and Microwave systems,Group 2,OPEN,430,390
+41,National Spot Round,"National Institute of Technology, Rourkela",RF and Microwave systems,Group 3,OPEN,385,370
+42,National Spot Round,National Institute of Technology Sikkim,M.Tech in Artificial Intelligence and Machine Learning,Group 1,OBC-NCL,353,330
+43,National Spot Round,National Institute of Technology Sikkim,M.Tech in Artificial Intelligence and Machine Learning,Group 1,OPEN,407,389
+44,National Spot Round,National Institute of Technology Sikkim,M.Tech in Artificial Intelligence and Machine Learning,Group 1,SC,278,278
+45,National Spot Round,National Institute of Technology Sikkim,M.Tech in VLSI and Embedded Systems,Group 1,SC,264,264
+46,National Spot Round,Indian Institute of Information Technology (IIIT) Surat,Electronics and Communication Engineering (VLSI),Group 1,OPEN,393,393
+47,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",Structures and Design,Group 1,OBC-NCL,347,347
+48,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",Structures and Design,Group 1,OPEN,404,404
+49,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",Control Systems,Group 1,OPEN,429,429
+50,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",Digital Signal Processing,Group 1,OBC-NCL,330,330
+51,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",Digital Signal Processing,Group 1,OPEN,405,405
+52,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",RF and Microwave Engineering,Group 1,OPEN,362,358
+53,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",VLSI and Microsystems,Group 1,OBC-NCL,417,416
+54,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",VLSI and Microsystems,Group 1,OPEN,463,436
+55,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",Earth System Science,Group 1,OPEN,352,352
+56,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",Optical Engineering,Group 1,OPEN,350,350
+57,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",Optical Engineering,Group 1,SC,252,252
+58,National Spot Round,"National Institute of Technology, Rourkela",Mechanical Systems Design and Control,Group 1,OBC-NCL,404,359
+59,National Spot Round,"National Institute of Technology, Rourkela",Mechanical Systems Design and Control,Group 2,OBC-NCL,338,331
+60,National Spot Round,"National Institute of Technology, Rourkela",Mechanical Systems Design and Control,Group 1,EWS,324,324
+61,National Spot Round,"National Institute of Technology, Rourkela",Mechanical Systems Design and Control,Group 1,OPEN,473,444
+62,National Spot Round,"National Institute of Technology, Rourkela",Mechanical Systems Design and Control,Group 2,OPEN,435,376
+63,National Spot Round,"National Institute of Technology, Rourkela",Mechanical Systems Design and Control,Group 1,SC,257,257
+64,National Spot Round,"National Institute of Technology Karnataka, Surathkal",POWER ELECTRONICS AND CONTROL,Group 1,OBC-NCL,480,472
+65,National Spot Round,"National Institute of Technology Karnataka, Surathkal",POWER ELECTRONICS AND CONTROL,Group 1,OPEN,504,496
+66,National Spot Round,National Institute of Technology Agartala,Communication Systems & Signal Processing,Group 1,SC,226,226
+67,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Control and Automation,Group 1,EWS,338,338
+68,National Spot Round,National Institute of Technology Raipur,Medical Devices with a specialization in Critical Care and IVD,Group 2,OPEN,350,350
+69,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Electronics and Communication Engineering (Defence and Space Electronics),Group 1,OPEN,362,362
+70,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Electronics and Communication Engineering (Signal Processing and AI),Group 1,OPEN,395,385
+71,National Spot Round,National Institute of Technology Calicut,Industrial Power & Automation,Group 1,ST,259,259
+72,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Electronics and Communication Engineering (Semiconductor Chip Design),Group 1,OPEN,401,393
+73,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Electronics and Communication Engineering (Semiconductor Chip Design),Group 1,SC,338,338
+74,National Spot Round,National Institute of Technology Durgapur,AI and Data Analytics in Process Engg,Group 1,OBC-NCL,453,427
+75,National Spot Round,National Institute of Technology Durgapur,AI and Data Analytics in Process Engg,Group 1,OPEN,503,486
+76,National Spot Round,National Institute of Technology Durgapur,Robotics & Artificial Intelligence,Group 1,SC,262,256
+77,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Autonomous Systems and Machine Intelligence,Group 1,OBC-NCL,381,356
+78,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Autonomous Systems and Machine Intelligence,Group 1,EWS,405,405
+79,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Autonomous Systems and Machine Intelligence,Group 1,OPEN,475,417
+80,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Autonomous Systems and Machine Intelligence,Group 1,SC,281,256
+81,National Spot Round,"National Institute of Technical Teachers Training & Research, Kolkata",Artificial Intelligence and Machine Learning with Pedagogy,Group 1,OPEN,360,360
+82,National Spot Round,"National Institute of Technical Teachers Training & Research, Kolkata",Artificial Intelligence and Machine Learning with Pedagogy,Group 1,SC,266,266
+83,National Spot Round,Maulana Azad National Institute of Technology Bhopal,M Plan (Real Estate Planning),Group 1,SC,217,217
+84,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Advanced Manufacturing Technology,Group 1,ST,266,266
+85,National Spot Round,"National Institute of Electronics and Information Technology, Calicut",Electronics Design technology,Group 1,OBC-NCL,330,330
+86,National Spot Round,"National Institute of Electronics and Information Technology, Calicut",Electronics Design technology,Group 1,OPEN,469,409
+87,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,M.Tech. in Medical Diagnostics and Devices,Group 1,SC,324,324
+88,National Spot Round,"Pt. Dwarka Prasad Mishra Indian Institute of Information Technology, Design & Manufacturing Jabalpur",Artificial Intelligence and Machine Learning,Group 1,OPEN,510,467
+89,National Spot Round,"Pt. Dwarka Prasad Mishra Indian Institute of Information Technology, Design & Manufacturing Jabalpur",Artificial Intelligence and Machine Learning,Group 1,SC,327,291
+90,National Spot Round,"Pt. Dwarka Prasad Mishra Indian Institute of Information Technology, Design & Manufacturing Jabalpur",Artificial Intelligence and Machine Learning,Group 1,ST,306,306
+91,National Spot Round,"Pt. Dwarka Prasad Mishra Indian Institute of Information Technology, Design & Manufacturing Jabalpur",Artificial Intelligence and Machine Learning,Group 1,OBC-NCL,418,417
+92,National Spot Round,"Pt. Dwarka Prasad Mishra Indian Institute of Information Technology, Design & Manufacturing Jabalpur",Artificial Intelligence and Machine Learning,Group 1,EWS,418,401
+93,National Spot Round,National Institute of Technology Uttarakhand,Artificial Intelligence and Machine Learning,Group 1,OPEN,423,414
+94,National Spot Round,National Institute of Technology Uttarakhand,Artificial Intelligence and Machine Learning,Group 1,SC,291,283
+95,National Spot Round,National Institute of Technology Uttarakhand,Artificial Intelligence and Machine Learning,Group 1,OBC-NCL,398,370
+96,National Spot Round,National Institute of Technology Uttarakhand,Artificial Intelligence and Machine Learning,Group 1,EWS,364,364
+97,National Spot Round,"Central University of Punjab, Bathinda, Punjab",Computer Science & Technology,Group 1,OPEN,380,356
+98,National Spot Round,National Institute of Technology Agartala,Cyber Security,Group 1,OBC-NCL,337,337
+99,National Spot Round,National Institute of Technology Agartala,Cyber Security,Group 1,OPEN,418,398
+100,National Spot Round,National Institute of Technology Agartala,Cyber Security,Group 1,SC,261,255
+101,National Spot Round,National Institute of Technology Patna,Cyber Security,Group 1,OBC-NCL,410,403
+102,National Spot Round,National Institute of Technology Patna,Cyber Security,Group 1,EWS,417,417
+103,National Spot Round,National Institute of Technology Patna,Cyber Security,Group 1,OPEN,436,420
+104,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Cyber Security,Group 1,OBC-NCL,352,328
+105,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Cyber Security,Group 1,OPEN,456,417
+106,National Spot Round,"Indian Institute of Information Technology, Design & Manufacturing Kancheepuram, Chennai",Computer Science and Engineering with Specialization in Data Science and Artificial Intelligence,Group 1,OBC-NCL,414,414
+107,National Spot Round,"Indian Institute of Information Technology, Design & Manufacturing Kancheepuram, Chennai",Computer Science and Engineering with Specialization in Data Science and Artificial Intelligence,Group 1,EWS,422,422
+108,National Spot Round,"Indian Institute of Information Technology, Design & Manufacturing Kancheepuram, Chennai",Computer Science and Engineering with Specialization in Data Science and Artificial Intelligence,Group 1,OPEN,476,475
+109,National Spot Round,Indian Institute of Information Technology (IIIT) Surat,Computer Science and Engineering with Specialization in Data Science and Artificial Intelligence,Group 1,OBC-NCL,339,327
+110,National Spot Round,Indian Institute of Information Technology (IIIT) Surat,Computer Science and Engineering with Specialization in Data Science and Artificial Intelligence,Group 1,OPEN,423,398
+111,National Spot Round,Indian Institute of Information Technology (IIIT) Surat,Computer Science and Engineering with Specialization in Data Science and Artificial Intelligence,Group 2,OPEN,397,390
+112,National Spot Round,"Indian Institute of Information Technology, Design & Manufacturing Kancheepuram, Chennai",Electronics and Communication Engineering with Specialization in Microelectronics and VLSI Systems,Group 1,OBC-NCL,365,365
+113,National Spot Round,"Indian Institute of Information Technology, Design & Manufacturing Kancheepuram, Chennai",Electronics and Communication Engineering with Specialization in Microelectronics and VLSI Systems,Group 1,OPEN,385,385
+114,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Advanced Computing,Group 1,OBC-NCL,486,456
+115,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Advanced Computing,Group 1,OPEN,516,503
+116,National Spot Round,"National Institute of Technology, Warangal",Automobile Engineering,Group 1,ST,334,334
+117,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Aerospace Engineering (Guided Missiles),Group 1,OPEN,376,376
+118,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Artificial Intelligence,Group 1,OBC-NCL,502,473
+119,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Artificial Intelligence,Group 1,EWS,453,453
+120,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Artificial Intelligence,Group 1,OPEN,548,506
+121,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Artificial Intelligence,Group 1,SC,338,338
+122,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Artificial Intelligence,Group 1,OBC-NCL,526,526
+123,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Artificial Intelligence,Group 2,OBC-NCL,417,417
+124,National Spot Round,"Indian Institute of Information Technology, Vadodara, Gandhinagar Campus",Artificial Intelligence,Group 1,OPEN,487,444
+125,National Spot Round,"Indian Institute of Information Technology, Vadodara, Diu Campus",Artificial Intelligence,Group 1,OPEN,405,398
+126,National Spot Round,"Indian Institute of Information Technology, Vadodara, Diu Campus",Artificial Intelligence,Group 1,SC,311,311
+127,National Spot Round,"National Institute of Electronics and Information Technology, Aurangabad",Artificial Intelligence,Group 2,OPEN,382,380
+128,National Spot Round,University of Hyderabad,Artificial Intelligence,Group 1,OBC-NCL,446,370
+129,National Spot Round,University of Hyderabad,Artificial Intelligence,Group 1,OPEN,537,493
+130,National Spot Round,National Institute of Technology Agartala,Artificial Intelligence,Group 1,OBC-NCL,373,373
+131,National Spot Round,National Institute of Technology Agartala,Artificial Intelligence,Group 1,OPEN,426,426
+132,National Spot Round,National Institute of Technology Agartala,Artificial Intelligence,Group 1,SC,301,280
+133,National Spot Round,"National Institute of Technology, Silchar",Artificial Intelligence,Group 1,OBC-NCL,443,436
+134,National Spot Round,"National Institute of Technology, Silchar",Artificial Intelligence,Group 1,OPEN,526,471
+135,National Spot Round,"National Institute of Technology, Silchar",Artificial Intelligence,Group 1,SC,324,323
+136,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Artificial Intelligence,Group 1,EWS,527,527
+137,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Artificial Intelligence,Group 2,EWS,338,338
+138,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Artificial Intelligence,Group 1,OPEN,572,568
+139,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Artificial Intelligence,Group 1,SC,377,377
+140,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Artificial Intelligence,Group 2,SC,299,299
+141,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Artificial Intelligence,Group 1,ST,260,260
+142,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Automation and Robotics,Group 1,OBC-NCL,352,347
+143,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Automation and Robotics,Group 1,EWS,364,364
+144,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Automation and Robotics,Group 1,OPEN,498,404
+145,National Spot Round,"National Institute of Technology, Rourkela",Information Security,Group 1,SC,435,433
+146,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Automation and Robotics,Group 1,OPEN,406,406
+147,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Automation and Robotics,Group 1,SC,272,272
+148,National Spot Round,"National Institute of Technology, Warangal",Advanced Communication Systems,Group 1,OBC-NCL,471,436
+149,National Spot Round,"National Institute of Technology, Warangal",Advanced Communication Systems,Group 1,EWS,444,393
+150,National Spot Round,"National Institute of Technology, Warangal",Advanced Communication Systems,Group 1,OPEN,491,475
+151,National Spot Round,"National Institute of Technology, Warangal",Advanced Communication Systems,Group 1,SC,355,355
+152,National Spot Round,National Institute of Technology Andhra Pradesh,Bioprocess Engineering,Group 1,OBC-NCL,304,304
+153,National Spot Round,National Institute of Technology Patna,Master of Urban & Regional Planning,Group 1,OBC-NCL,288,288
+154,National Spot Round,"National Institute of Technology, Rourkela",Master of Urban & Regional Planning,Group 1,OBC-NCL,294,294
+155,National Spot Round,"National Institute of Technology, Rourkela",Biomedical Engineering,Group 1,OBC-NCL,422,422
+156,National Spot Round,"National Institute of Technology, Rourkela",Biomedical Engineering,Group 1,OPEN,441,428
+157,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Biomedical Engineering,Group 1,SC,207,193
+158,National Spot Round,National Institute of Technology Agartala,Biotechnology & Biochemical Engineering,Group 1,OPEN,392,392
+159,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Bioinformatics,Group 1,OPEN,406,371
+160,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Bioinformatics,Group 1,SC,306,306
+161,National Spot Round,University of Hyderabad,Bioinformatics,Group 1,ST,441,441
+162,National Spot Round,"National Institute of Technology, Kurukshetra",Computer Engineering (Cyber Security),Group 1,OBC-NCL,496,489
+163,National Spot Round,"National Institute of Technology, Kurukshetra",Computer Engineering (Cyber Security),Group 1,EWS,469,469
+164,National Spot Round,"National Institute of Technology, Kurukshetra",Computer Engineering (Cyber Security),Group 1,OPEN,546,539
+165,National Spot Round,"National Institute of Technology, Kurukshetra",Computer Engineering (Cyber Security),Group 1,SC,360,354
+166,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Biotechnology,Group 1,SC,239,239
+167,National Spot Round,National Institute of Technology Durgapur,Biotechnology,Group 1,OPEN,394,394
+168,National Spot Round,"National Institute of Technology, Warangal",Biotechnology,Group 1,EWS,363,350
+169,National Spot Round,"National Institute of Technology, Warangal",Biotechnology,Group 1,OPEN,474,474
+170,National Spot Round,National Institute of Technology Hamirpur,Civil Engineering (Geotechnical),Group 1,SC,256,256
+171,National Spot Round,"National Institute of Technology, Warangal",Smart Electric Grid,Group 1,OBC-NCL,350,342
+172,National Spot Round,"National Institute of Technology, Warangal",Smart Electric Grid,Group 1,EWS,342,342
+173,National Spot Round,"National Institute of Technology, Warangal",Smart Electric Grid,Group 1,OPEN,393,393
+174,National Spot Round,"National Institute of Technology, Warangal",Smart Electric Grid,Group 1,ST,275,275
+175,National Spot Round,"National Institute of Technology, Rourkela",Control & Automation,Group 1,OBC-NCL,351,323
+176,National Spot Round,"National Institute of Technology, Rourkela",Control & Automation,Group 1,OPEN,374,374
+177,National Spot Round,"National Institute of Technology, Warangal",Control & Automation,Group 1,OBC-NCL,370,370
+178,National Spot Round,"National Institute of Technology, Warangal",Control & Automation,Group 3,EWS,389,389
+179,National Spot Round,"National Institute of Technology, Warangal",Control & Automation,Group 1,OPEN,429,429
+180,National Spot Round,"National Institute of Technology, Warangal",Control & Automation,Group 3,OPEN,410,410
+181,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",CAD-CAM,Group 1,OBC-NCL,324,324
+182,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Computational and Data Science,Group 1,OBC-NCL,612,610
+183,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Computational and Data Science,Group 1,EWS,631,628
+184,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Computational and Data Science,Group 1,OPEN,648,645
+185,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Computational and Data Science,Group 1,ST,440,440
+186,National Spot Round,National Institute of Technology Calicut,Chemical Engineering,Group 1,OPEN,370,370
+187,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Control & Instrumentation,Group 1,OPEN,350,350
+188,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Communication System Engineering,Group 1,OBC-NCL,330,330
+189,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Communication System Engineering,Group 1,OPEN,362,362
+190,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Communication Engineering & Signal Processing,Group 1,OPEN,358,350
+191,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Construction Technology and Management,Group 1,OBC-NCL,423,412
+192,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Construction Technology and Management,Group 1,OPEN,480,480
+193,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Construction Technology and Management,Group 1,EWS,348,348
+194,National Spot Round,"National Institute of Technology, Rourkela",Construction Technology and Management,Group 1,OBC-NCL,378,378
+195,National Spot Round,"National Institute of Technology, Warangal",Construction Technology and Management,Group 1,OPEN,476,476
+196,National Spot Round,National Institute of Technology Patna,Control System Engineering,Group 1,SC,252,252
+197,National Spot Round,Malaviya National Institute of Technology Jaipur,Computer Science & Information Security,Group 1,OBC-NCL,560,548
+198,National Spot Round,Malaviya National Institute of Technology Jaipur,Computer Science & Information Security,Group 1,EWS,585,552
+199,National Spot Round,Malaviya National Institute of Technology Jaipur,Computer Science & Information Security,Group 1,OPEN,592,588
+200,National Spot Round,Malaviya National Institute of Technology Jaipur,Computer Science & Information Security,Group 1,SC,420,420
+201,National Spot Round,"National Institute of Technology, Warangal",Computer Science & Information Security,Group 1,OBC-NCL,655,648
+202,National Spot Round,"National Institute of Technology, Warangal",Computer Science & Information Security,Group 1,EWS,689,688
+203,National Spot Round,"National Institute of Technology, Warangal",Computer Science & Information Security,Group 1,OPEN,698,693
+204,National Spot Round,"National Institute of Technology, Warangal",Computer Science & Information Security,Group 1,SC,502,476
+205,National Spot Round,"National Institute of Technology, Warangal",Computer Science & Information Security,Group 1,ST,338,338
+206,National Spot Round,"Punjab Engineering College, Chandigarh",Computer Science & Information Security,Group 1,OPEN,410,410
+207,National Spot Round,"National Institute of Technology, Jamshedpur",Communication Systems Engineering,Group 1,OPEN,350,350
+208,National Spot Round,"National Institute of Technology, Rourkela",Communication & Networks,Group 1,OBC-NCL,473,412
+209,National Spot Round,"National Institute of Technology, Rourkela",Communication & Networks,Group 1,EWS,456,381
+210,National Spot Round,"National Institute of Technology, Rourkela",Communication & Networks,Group 1,OPEN,498,483
+211,National Spot Round,"National Institute of Technology, Rourkela",Communication & Networks,Group 1,SC,305,298
+212,National Spot Round,"National Institute of Technology, Rourkela",Communication & Networks,Group 1,ST,251,251
+213,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Communication Engineering and Networks,Group 1,OBC-NCL,471,449
+214,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Communication Engineering and Networks,Group 1,EWS,479,479
+215,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Communication Engineering and Networks,Group 1,OPEN,504,489
+216,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Communication Engineering and Networks,Group 1,SC,327,327
+217,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Communication Engineering and Networks,Group 1,ST,256,256
+218,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Communication Systems,Group 1,OPEN,358,358
+219,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Communication Systems,Group 1,SC,280,280
+220,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Communication Systems,Group 1,OBC-NCL,389,370
+221,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Communication Systems,Group 1,EWS,366,345
+222,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Communication Systems,Group 1,OPEN,428,389
+223,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Communication Systems,Group 1,SC,276,276
+224,National Spot Round,"National Institute of Technology, Tiruchirappalli",Communication Systems,Group 1,EWS,502,471
+225,National Spot Round,"National Institute of Technology, Tiruchirappalli",Communication Systems,Group 1,OPEN,534,530
+226,National Spot Round,"National Institute of Technology, Tiruchirappalli",Communication Systems,Group 1,ST,291,291
+227,National Spot Round,"National Institute of Technology, Kurukshetra",Communication Systems,Group 1,OBC-NCL,370,354
+228,National Spot Round,"National Institute of Technology, Kurukshetra",Communication Systems,Group 1,OPEN,385,370
+229,National Spot Round,"National Institute of Technology, Tiruchirappalli",Communication Systems,Group 1,OBC-NCL,518,499
+230,National Spot Round,"Indian Institute of Information Technology, Design and Manufacturing, Kurnool",M.Tech. Drones and IoT,Group 1,OPEN,358,358
+231,National Spot Round,National Institute of Technology Andhra Pradesh,Computer Science and Data Analytics,Group 1,OBC-NCL,410,390
+232,National Spot Round,National Institute of Technology Andhra Pradesh,Computer Science and Data Analytics,Group 1,OPEN,434,418
+233,National Spot Round,Malaviya National Institute of Technology Jaipur,Design Engineering,Group 1,OPEN,442,421
+234,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Data Analytics,Group 1,OBC-NCL,443,423
+235,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Data Analytics,Group 1,EWS,448,420
+236,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Data Analytics,Group 1,OPEN,485,471
+237,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Data Analytics,Group 1,SC,318,311
+238,National Spot Round,"National Institute of Technology, Tiruchirappalli",Data Analytics,Group 1,OBC-NCL,622,614
+239,National Spot Round,"National Institute of Technology, Tiruchirappalli",Data Analytics,Group 1,EWS,638,632
+240,National Spot Round,"National Institute of Technology, Tiruchirappalli",Data Analytics,Group 1,OPEN,689,688
+241,National Spot Round,"National Institute of Technology, Tiruchirappalli",Data Analytics,Group 1,ST,375,375
+242,National Spot Round,"National Institute of Technology, Rourkela",Energy and Environmental Engineering,Group 1,OPEN,424,424
+243,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Computer Science & Engineering in (Artificial Intelligence & Data Science),Group 1,OBC-NCL,585,585
+244,National Spot Round,National Institute of Technology Calicut,Electronics Design & Technology,Group 1,OBC-NCL,518,484
+245,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Computer Science & Engineering in (Artificial Intelligence & Data Science),Group 1,EWS,606,606
+246,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Computer Science & Engineering in (Artificial Intelligence & Data Science),Group 1,OPEN,628,627
+247,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Computer Science & Engineering in (Artificial Intelligence & Data Science),Group 1,SC,473,426
+248,National Spot Round,Malaviya National Institute of Technology Jaipur,Embedded Systems,Group 1,OBC-NCL,432,397
+249,National Spot Round,Malaviya National Institute of Technology Jaipur,Embedded Systems,Group 2,OBC-NCL,410,410
+250,National Spot Round,Malaviya National Institute of Technology Jaipur,Embedded Systems,Group 1,OPEN,459,436
+251,National Spot Round,Malaviya National Institute of Technology Jaipur,Embedded Systems,Group 2,OPEN,477,477
+252,National Spot Round,Malaviya National Institute of Technology Jaipur,Embedded Systems,Group 1,SC,280,280
+253,National Spot Round,"National Institute of Technology, Rourkela",Electronic Systems & Communication,Group 1,OBC-NCL,424,393
+254,National Spot Round,"National Institute of Technology, Rourkela",Electronic Systems & Communication,Group 1,EWS,393,385
+255,National Spot Round,"National Institute of Technology, Rourkela",Electronic Systems & Communication,Group 1,OPEN,456,424
+256,National Spot Round,"National Institute of Technology, Rourkela",Electronic Systems & Communication,Group 1,SC,291,291
+257,National Spot Round,"National Institute of Technology, Rourkela",Electronic Systems & Communication,Group 1,ST,244,244
+258,National Spot Round,Malaviya National Institute of Technology Jaipur,Electronics and Communication Engineering,Group 1,OBC-NCL,355,335
+259,National Spot Round,Malaviya National Institute of Technology Jaipur,Electronics and Communication Engineering,Group 1,OPEN,393,385
+260,National Spot Round,National Institute of Technology Delhi,Electronics and Communication Engineering,Group 1,OBC-NCL,346,315
+261,National Spot Round,National Institute of Technology Delhi,Electronics and Communication Engineering,Group 1,OPEN,389,373
+262,National Spot Round,"Indian Institute of Information Technology, Pune",Electronics and Communication Engineering,Group 1,EWS,323,323
+263,National Spot Round,"National Institute of Technology, Rourkela",Electronics and Instrumentation Engineering,Group 1,OBC-NCL,454,448
+264,National Spot Round,"National Institute of Technology, Rourkela",Electronics and Instrumentation Engineering,Group 1,OPEN,506,479
+265,National Spot Round,National Institute of Technology Calicut,Electronics Design & Technology,Group 1,EWS,514,506
+266,National Spot Round,National Institute of Technology Calicut,Electronics Design & Technology,Group 1,OPEN,549,526
+267,National Spot Round,National Institute of Technology Calicut,Electronics Design & Technology,Group 1,SC,330,327
+268,National Spot Round,National Institute of Technology Calicut,Electronics Design & Technology,Group 1,ST,288,288
+269,National Spot Round,"National Institute of Technology, Warangal",Engineering Structures,Group 1,OBC-NCL,404,370
+270,National Spot Round,"National Institute of Technology, Warangal",Engineering Structures,Group 1,EWS,374,374
+271,National Spot Round,"National Institute of Technology, Warangal",Engineering Structures,Group 1,OPEN,416,416
+272,National Spot Round,"National Institute of Technology, Warangal",Engineering Structures,Group 1,SC,332,332
+273,National Spot Round,"National Institute of Technology, Warangal",Engineering Structures,Group 1,ST,291,291
+274,National Spot Round,Malaviya National Institute of Technology Jaipur,Environmental Engineering,Group 1,OPEN,438,438
+275,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Environmental Engineering,Group 1,OPEN,685,430
+276,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Environmental Engineering,Group 1,SC,262,262
+277,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Environmental Engineering,Group 1,OBC-NCL,332,332
+278,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Environmental Engineering,Group 1,EWS,312,312
+279,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Environmental Engineering,Group 1,OPEN,393,393
+280,National Spot Round,"National Institute of Technology, Tiruchirappalli",Environmental Engineering,Group 1,OBC-NCL,408,408
+281,National Spot Round,"National Institute of Technology, Tiruchirappalli",Environmental Engineering,Group 1,OPEN,445,445
+282,National Spot Round,"National Institute of Technology, Warangal",Environmental Engineering,Group 1,OBC-NCL,328,328
+283,National Spot Round,"National Institute of Technology, Warangal",Environmental Engineering,Group 1,OPEN,401,378
+284,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Environmental Engineering,Group 1,OPEN,438,438
+285,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Excavation Engineering,Group 1,SC,245,245
+286,National Spot Round,"National Institute of Technology, Tiruchirappalli",Energy Engineering,Group 2,OPEN,354,354
+287,National Spot Round,"National Institute of Technology, Tiruchirappalli",Geotechnical Engineering,Group 1,OBC-NCL,317,317
+288,National Spot Round,"National Institute of Technology, Tiruchirappalli",Geotechnical Engineering,Group 1,OPEN,359,351
+289,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Geotechnical Engineering,Group 1,SC,256,256
+290,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Geoinformatics,Group 1,OPEN,367,367
+291,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Geoinformatics,Group 1,OBC-NCL,348,348
+292,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",Geoinformatics,Group 1,OBC-NCL,378,378
+293,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",Geoinformatics,Group 1,OPEN,452,452
+294,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Information and Cyber Security,Group 1,OBC-NCL,410,381
+295,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Information and Cyber Security,Group 1,EWS,384,384
+296,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Information and Cyber Security,Group 1,OPEN,463,452
+297,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Information and Cyber Security,Group 1,SC,289,289
+298,National Spot Round,National Institute of Technology Calicut,Industrial Power & Automation,Group 1,OPEN,366,366
+299,National Spot Round,"National Institute of Technology, Tiruchirappalli",Industrial Safety Engineering,Group 1,OBC-NCL,314,314
+300,National Spot Round,"National Institute of Technology, Tiruchirappalli",Industrial Safety Engineering,Group 2,OPEN,378,378
+301,National Spot Round,"National Institute of Technology, Tiruchirappalli",Industrial Automation,Group 1,OBC-NCL,362,362
+302,National Spot Round,"National Institute of Technology, Tiruchirappalli",Industrial Automation,Group 5,OBC-NCL,431,387
+303,National Spot Round,"National Institute of Technology, Tiruchirappalli",Industrial Automation,Group 5,OPEN,498,498
+304,National Spot Round,National Institute of Technology Calicut,Instrumentation & Control Systems,Group 2,OBC-NCL,357,357
+305,National Spot Round,National Institute of Technology Calicut,Instrumentation & Control Systems,Group 1,OPEN,366,358
+306,National Spot Round,National Institute of Technology Calicut,Instrumentation & Control Systems,Group 1,SC,267,267
+307,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Information Security,Group 1,OBC-NCL,498,464
+308,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Information Security,Group 1,EWS,486,486
+309,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Information Security,Group 1,OPEN,552,535
+310,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Information Security,Group 1,ST,252,252
+311,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Information Security,Group 1,EWS,572,572
+312,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Information Security,Group 1,OPEN,624,624
+313,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Information Security,Group 1,SC,423,423
+314,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Information Security,Group 1,ST,317,317
+315,National Spot Round,"National Institute of Technology, Rourkela",Information Security,Group 1,OBC-NCL,582,562
+316,National Spot Round,"National Institute of Technology, Rourkela",Information Security,Group 1,EWS,592,585
+317,National Spot Round,"National Institute of Technology, Rourkela",Information Security,Group 1,OPEN,618,612
+318,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Information Technology,Group 1,OBC-NCL,622,615
+319,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Information Technology,Group 1,EWS,643,632
+320,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Information Technology,Group 1,OPEN,688,656
+321,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Information Technology,Group 1,SC,479,479
+322,National Spot Round,National Institute of Technology Raipur,Information Technology,Group 1,OBC-NCL,426,407
+323,National Spot Round,National Institute of Technology Raipur,Information Technology,Group 2,OBC-NCL,431,431
+324,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Information Technology,Group 1,OBC-NCL,448,402
+325,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Information Technology,Group 1,EWS,436,436
+326,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Information Technology,Group 1,OPEN,505,473
+327,National Spot Round,"Guru Ghasidas Vishwavidyalaya, Bilaspur",Information Technology,Group 1,OPEN,353,353
+328,National Spot Round,National Institute of Technology Raipur,Information Technology,Group 1,SC,315,304
+329,National Spot Round,National Institute of Technology Raipur,Information Technology,Group 2,SC,319,319
+330,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Information Technology,Group 1,OBC-NCL,385,350
+331,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Information Technology,Group 1,EWS,413,413
+332,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Information Technology,Group 1,OPEN,463,433
+333,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Information Technology,Group 1,SC,298,298
+334,National Spot Round,National Institute of Technology Raipur,Information Technology,Group 3,OBC-NCL,404,404
+335,National Spot Round,National Institute of Technology Raipur,Information Technology,Group 1,EWS,401,398
+336,National Spot Round,National Institute of Technology Raipur,Information Technology,Group 2,EWS,393,393
+337,National Spot Round,National Institute of Technology Raipur,Information Technology,Group 1,OPEN,468,448
+338,National Spot Round,National Institute of Technology Raipur,Information Technology,Group 2,OPEN,433,433
+339,National Spot Round,National Institute of Technology Raipur,Information Technology,Group 3,OPEN,431,431
+340,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Industrial Engineering & Management,Group 1,OPEN,361,361
+341,National Spot Round,"National Institute of Technology, Tiruchirappalli",Industrial Engineering & Management,Group 1,OBC-NCL,397,397
+342,National Spot Round,"National Institute of Technology, Tiruchirappalli",Industrial Engineering & Management,Group 1,EWS,366,366
+343,National Spot Round,"National Institute of Technology, Tiruchirappalli",Industrial Engineering & Management,Group 1,OPEN,573,573
+344,National Spot Round,"National Institute of Technology, Tiruchirappalli",Industrial Engineering & Management,Group 1,SC,231,231
+345,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Industrial Engineering and Data Analytics,Group 1,OBC-NCL,379,327
+346,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Industrial Engineering and Data Analytics,Group 1,EWS,356,356
+347,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Industrial Engineering and Data Analytics,Group 1,OPEN,418,385
+348,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Industrial Engineering and Data Analytics,Group 1,SC,268,268
+349,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Mechanical Design,Group 1,OPEN,566,566
+350,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Mechanical Design,Group 2,OPEN,563,563
+351,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Mechanical Design,Group 3,OPEN,549,549
+352,National Spot Round,National Institute of Technology Calicut,Machine Design,Group 1,OBC-NCL,346,345
+353,National Spot Round,National Institute of Technology Calicut,Machine Design,Group 1,EWS,359,359
+354,National Spot Round,National Institute of Technology Calicut,Machine Design,Group 1,OPEN,442,425
+355,National Spot Round,"National Institute of Technology, Warangal",Machine Design,Group 1,OBC-NCL,441,421
+356,National Spot Round,"National Institute of Technology, Warangal",Machine Design,Group 1,OPEN,508,473
+357,National Spot Round,"National Institute of Technology, Tiruchirappalli",Manufacturing Technology,Group 1,OBC-NCL,325,325
+358,National Spot Round,"National Institute of Technology, Tiruchirappalli",Manufacturing Technology,Group 1,OPEN,387,383
+359,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Microelectronics & VLSI Design,Group 1,EWS,534,534
+360,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Microelectronics & VLSI Design,Group 1,OPEN,612,569
+361,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Microelectronics & VLSI Design,Group 1,ST,272,272
+362,National Spot Round,National Institute of Technology Calicut,Microelectronics & VLSI Design,Group 1,OBC-NCL,584,584
+363,National Spot Round,National Institute of Technology Calicut,Microelectronics & VLSI Design,Group 1,EWS,553,541
+364,National Spot Round,National Institute of Technology Calicut,Microelectronics & VLSI Design,Group 1,OPEN,596,584
+365,National Spot Round,National Institute of Technology Uttarakhand,Microelectronics & VLSI Design,Group 1,SC,252,252
+366,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Microelectronics & VLSI Design,Group 1,OBC-NCL,342,342
+367,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Microelectronics & VLSI Design,Group 1,EWS,327,327
+368,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Microelectronics & VLSI Design,Group 1,OPEN,377,362
+369,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Microelectronics & VLSI Design,Group 1,SC,260,246
+370,National Spot Round,"National Institute of Technology, Silchar",Microelectronics & VLSI Design,Group 1,OBC-NCL,385,349
+371,National Spot Round,"National Institute of Technology, Silchar",Microelectronics & VLSI Design,Group 1,EWS,374,370
+372,National Spot Round,"National Institute of Technology, Silchar",Microelectronics & VLSI Design,Group 1,OPEN,424,389
+373,National Spot Round,"National Institute of Technology, Silchar",Microelectronics & VLSI Design,Group 1,SC,322,322
+374,National Spot Round,National Institute of Technology Uttarakhand,Microelectronics & VLSI Design,Group 1,OBC-NCL,331,330
+375,National Spot Round,National Institute of Technology Uttarakhand,Microelectronics & VLSI Design,Group 1,OPEN,350,350
+376,National Spot Round,"National Institute of Technology, Rourkela",Mining Engineering,Group 1,OPEN,351,351
+377,National Spot Round,National Institute of Technology Durgapur,Microelectronics & VLSI,Group 1,OBC-NCL,488,475
+378,National Spot Round,National Institute of Technology Durgapur,Microelectronics & VLSI,Group 1,EWS,467,467
+379,National Spot Round,National Institute of Technology Durgapur,Microelectronics & VLSI,Group 1,OPEN,522,519
+380,National Spot Round,National Institute of Technology Durgapur,Microelectronics & VLSI,Group 1,SC,374,374
+381,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Marine Structures,Group 1,EWS,412,412
+382,National Spot Round,"National Institute of Technology, Tiruchirappalli",Material Science & Engineering,Group 1,OPEN,501,407
+383,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Manufacturing Engineering,Group 1,EWS,335,335
+384,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Mechatronics Engineering,Group 1,OBC-NCL,357,357
+385,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Mechatronics Engineering,Group 2,OBC-NCL,323,323
+386,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Mechatronics Engineering,Group 2,OPEN,409,385
+387,National Spot Round,National Institute of Technology Durgapur,Next Generation Communication and Networks,Group 1,OBC-NCL,344,342
+388,National Spot Round,National Institute of Technology Durgapur,Next Generation Communication and Networks,Group 1,EWS,357,357
+389,National Spot Round,National Institute of Technology Durgapur,Next Generation Communication and Networks,Group 1,OPEN,448,390
+390,National Spot Round,National Institute of Technology Durgapur,Next Generation Communication and Networks,Group 1,SC,269,256
+391,National Spot Round,"National Institute of Technology, Tiruchirappalli",Non Destructive Testing,Group 1,OBC-NCL,346,346
+392,National Spot Round,"National Institute of Technology, Tiruchirappalli",Non Destructive Testing,Group 1,OPEN,360,360
+393,National Spot Round,"National Institute of Technology, Tiruchirappalli",Non Destructive Testing,Group 1,SC,248,226
+394,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Nanotechnology,Group 1,OBC-NCL,315,315
+395,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Nanotechnology,Group 1,OPEN,362,362
+396,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Nanotechnology,Group 1,SC,265,265
+397,National Spot Round,"Pt. Dwarka Prasad Mishra Indian Institute of Information Technology, Design & Manufacturing Jabalpur",Nanoelectronics and VLSI Design,Group 1,OPEN,377,377
+398,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Communication System,Group 1,OPEN,370,370
+399,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Communication System,Group 1,SC,268,268
+400,National Spot Round,National Institute of Technology Durgapur,Operations Research,Group 1,OBC-NCL,389,389
+401,National Spot Round,National Institute of Technology Durgapur,Operations Research,Group 1,OPEN,406,398
+402,National Spot Round,National Institute of Technology Durgapur,Operations Research,Group 1,SC,314,314
+403,National Spot Round,National Institute of Technology Calicut,Offshore Structures,Group 1,OPEN,389,389
+404,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Information Security and privacy,Group 1,OBC-NCL,483,439
+405,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Information Security and privacy,Group 1,EWS,436,420
+406,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Information Security and privacy,Group 1,OPEN,518,485
+407,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Information Security and privacy,Group 1,SC,339,339
+408,National Spot Round,National Institute of Technology Durgapur,Power Electronics & Machine Drives,Group 1,OPEN,354,350
+409,National Spot Round,National Institute of Technology Durgapur,Power Electronics & Machine Drives,Group 1,OBC-NCL,323,323
+410,National Spot Round,"National Institute of Technology, Tiruchirappalli",Process Control and Instrumentation,Group 1,OBC-NCL,342,342
+411,National Spot Round,"National Institute of Technology, Tiruchirappalli",Process Control and Instrumentation,Group 1,OPEN,378,370
+412,National Spot Round,"National Institute of Technology, Tiruchirappalli",Process Control and Instrumentation,Group 1,SC,283,283
+413,National Spot Round,Malaviya National Institute of Technology Jaipur,Power Electronics & Drives,Group 1,OBC-NCL,342,326
+414,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Power Electronics & Drives,Group 1,OPEN,401,354
+415,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Power Electronics & Drives,Group 1,OBC-NCL,358,350
+416,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Power Electronics & Drives,Group 1,OPEN,405,382
+417,National Spot Round,National Institute of Technology Delhi,Power Electronics & Drives,Group 1,OBC-NCL,338,338
+418,National Spot Round,"National Institute of Technology, Rourkela",Power Electronics & Drives,Group 1,ST,354,354
+419,National Spot Round,"National Institute of Technology, Warangal",Power Electronics & Drives,Group 1,OBC-NCL,452,429
+420,National Spot Round,"National Institute of Technology, Warangal",Power Electronics & Drives,Group 1,OPEN,508,476
+421,National Spot Round,"National Institute of Technology, Warangal",Power Electronics & Drives,Group 1,ST,292,292
+422,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Power Electronics & Drives,Group 1,OBC-NCL,342,341
+423,National Spot Round,"National Institute of Technology, Jamshedpur",Power Electronics & Drives,Group 1,SC,252,252
+424,National Spot Round,"National Institute of Technology, Kurukshetra",Power Electronics & Drives,Group 1,OPEN,374,362
+425,National Spot Round,"National Institute of Technology, Rourkela",Power Electronics & Drives,Group 1,OBC-NCL,397,354
+426,National Spot Round,"National Institute of Technology, Rourkela",Power Electronics & Drives,Group 1,EWS,370,370
+427,National Spot Round,"National Institute of Technology, Rourkela",Power Electronics & Drives,Group 1,OPEN,441,401
+428,National Spot Round,National Institute of Technology Calicut,Power Electronics,Group 1,OBC-NCL,382,366
+429,National Spot Round,National Institute of Technology Calicut,Power Electronics,Group 1,EWS,346,342
+430,National Spot Round,National Institute of Technology Calicut,Power Electronics,Group 1,OPEN,452,413
+431,National Spot Round,National Institute of Technology Calicut,Power Electronics,Group 1,SC,306,306
+432,National Spot Round,National Institute of Technology Calicut,Power Electronics,Group 1,ST,271,271
+433,National Spot Round,National Institute of Technology Puducherry,Power Electronics,Group 1,SC,252,252
+434,National Spot Round,"National Institute of Technology, Tiruchirappalli",Power Electronics,Group 1,OBC-NCL,492,488
+435,National Spot Round,"National Institute of Technology, Tiruchirappalli",Power Electronics,Group 1,OPEN,527,523
+436,National Spot Round,"National Institute of Technology, Tiruchirappalli",Power Electronics,Group 1,SC,370,366
+437,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",Power Electronics,Group 1,EWS,358,358
+438,National Spot Round,"Indian Institute of Space Science and Technology, Thiruvananthapuram",Power Electronics,Group 1,OPEN,393,393
+439,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah","Power Electronics, Machines and Drives",Group 1,OPEN,358,358
+440,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Power Electronics & Electrical Drives,Group 1,OBC-NCL,330,330
+441,National Spot Round,Malaviya National Institute of Technology Jaipur,Power Systems Management,Group 1,SC,252,252
+442,National Spot Round,National Institute of Technology Calicut,Power Systems,Group 1,OPEN,366,358
+443,National Spot Round,National Institute of Technology Calicut,Power Systems,Group 1,SC,288,275
+444,National Spot Round,"National Institute of Technology, Tiruchirappalli",Power Systems,Group 1,OPEN,472,472
+445,National Spot Round,"National Institute of Technology, Tiruchirappalli",Power Systems,Group 1,SC,303,299
+446,National Spot Round,"National Institute of Technology, Jamshedpur",Power Systems Engineering,Group 1,OPEN,358,358
+447,National Spot Round,"National Institute of Technology, Warangal",Power Systems Engineering,Group 1,OBC-NCL,393,393
+448,National Spot Round,"National Institute of Technology, Warangal",Power Systems Engineering,Group 1,EWS,385,378
+449,National Spot Round,"National Institute of Technology, Warangal",Power Systems Engineering,Group 1,OPEN,409,405
+450,National Spot Round,"National Institute of Technology, Rourkela",Power System Engineering,Group 1,OBC-NCL,354,334
+451,National Spot Round,"National Institute of Technology, Rourkela",Power System Engineering,Group 1,OPEN,380,370
+452,National Spot Round,"National Institute of Technology, Kurukshetra",Renewable Energy Systems,Group 1,OPEN,354,354
+453,National Spot Round,"National Institute of Technology, Silchar",Power & Energy Systems Engineering,Group 1,SC,268,268
+454,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Power & Energy Systems,Group 1,OBC-NCL,460,397
+455,National Spot Round,National Institute of Technology Meghalaya,Power & Energy Systems,Group 1,ST,244,244
+456,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Power & Energy Systems,Group 1,OBC-NCL,322,322
+457,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Power & Energy Systems,Group 1,OPEN,363,363
+458,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Power & Energy Systems,Group 1,SC,314,314
+459,National Spot Round,National Institute of Technology Goa,Power Electronics & Power Systems,Group 1,SC,291,291
+460,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Quantum Computing,Group 1,OPEN,393,387
+461,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Quantum Computing,Group 1,SC,271,271
+462,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Quantum Computing,Group 1,EWS,381,381
+463,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Electronics and Communication Engineering (Radar and Communications),Group 1,OPEN,350,350
+464,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Electronics and Communication Engineering (VLSI and Embedded System),Group 1,EWS,366,366
+465,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Electronics and Communication Engineering (VLSI and Embedded System),Group 1,OPEN,397,397
+466,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Electronics and Communication Engineering (VLSI and Embedded System),Group 1,SC,286,286
+467,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Electronics and Communication Engineering (VLSI and Embedded System),Group 1,ST,231,231
+468,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Electronics and Communication Engineering (VLSI and Embedded System),Group 1,OBC-NCL,342,322
+469,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Modeling and Simulation,Group 1,OBC-NCL,327,327
+470,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Modeling and Simulation,Group 1,OPEN,404,373
+471,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Technology Management,Group 1,OPEN,375,375
+472,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Data Science,Group 1,OBC-NCL,523,496
+473,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Data Science,Group 1,EWS,522,495
+474,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Data Science,Group 1,OPEN,585,549
+475,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Data Science,Group 1,SC,373,373
+476,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Data Science,Group 1,ST,281,281
+477,National Spot Round,"Pt. Dwarka Prasad Mishra Indian Institute of Information Technology, Design & Manufacturing Jabalpur",Data Science,Group 1,OBC-NCL,414,406
+478,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Data Science,Group 1,EWS,410,410
+479,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Data Science,Group 1,OPEN,466,456
+480,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Data Science,Group 1,SC,291,291
+481,National Spot Round,"Pt. Dwarka Prasad Mishra Indian Institute of Information Technology, Design & Manufacturing Jabalpur",Data Science,Group 1,OPEN,448,446
+482,National Spot Round,"Indian Institute of Information Technology, Vadodara, Gandhinagar Campus",Data Science,Group 1,OBC-NCL,385,352
+483,National Spot Round,"Indian Institute of Information Technology, Vadodara, Gandhinagar Campus",Data Science,Group 1,EWS,330,330
+484,National Spot Round,"Indian Institute of Information Technology, Vadodara, Gandhinagar Campus",Data Science,Group 1,OPEN,417,409
+485,National Spot Round,"Indian Institute of Information Technology, Vadodara, Gandhinagar Campus",Data Science,Group 1,SC,268,268
+486,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Data Science,Group 1,OBC-NCL,405,377
+487,National Spot Round,"Indian Institute of Information Technology, Design and Manufacturing, Kurnool",M.Tech. Robotics and Automation,Group 1,OPEN,352,352
+488,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Renewable Energy,Group 1,SC,255,255
+489,National Spot Round,Malaviya National Institute of Technology Jaipur,Renewable Energy,Group 1,OPEN,361,361
+490,National Spot Round,"National Institute of Technology, Kurukshetra",Renewable Energy Systems,Group 1,SC,259,259
+491,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Data Science & Engineering,Group 1,OBC-NCL,466,456
+492,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Data Science & Engineering,Group 1,EWS,452,452
+493,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Data Science & Engineering,Group 1,OPEN,496,489
+494,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Data Science & Engineering,Group 1,SC,370,327
+495,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Data Science & Engineering,Group 1,ST,252,252
+496,National Spot Round,National Institute of Technology Agartala,Data Science & Engineering,Group 1,OBC-NCL,393,357
+497,National Spot Round,"National Institute of Technology, Silchar",Data Science & Engineering,Group 1,EWS,443,443
+498,National Spot Round,"National Institute of Technology, Silchar",Data Science & Engineering,Group 1,OPEN,485,460
+499,National Spot Round,"National Institute of Technology, Silchar",Data Science & Engineering,Group 1,SC,319,319
+500,National Spot Round,National Institute of Technology Patna,Data Science & Engineering,Group 1,OBC-NCL,448,436
+501,National Spot Round,National Institute of Technology Patna,Data Science & Engineering,Group 1,EWS,458,458
+502,National Spot Round,National Institute of Technology Patna,Data Science & Engineering,Group 1,OPEN,495,471
+503,National Spot Round,National Institute of Technology Patna,Data Science & Engineering,Group 1,SC,317,317
+504,National Spot Round,"National Institute of Technology, Silchar",Data Science & Engineering,Group 1,OBC-NCL,436,418
+505,National Spot Round,National Institute of Technology Agartala,Data Science & Engineering,Group 1,OPEN,496,496
+506,National Spot Round,National Institute of Technology Agartala,Data Science & Engineering,Group 1,SC,260,258
+507,National Spot Round,"Indian Institute of Information Technology, Una",Computer Science & Engineering with Specialization in Data Science/Cyber Security,Group 1,OPEN,460,410
+508,National Spot Round,"National Institute of Technology, Jamshedpur",Information Systems Security Engineering,Group 1,SC,370,331
+509,National Spot Round,"Indian Institute of Information Technology, Kota",Computer Science and Engineering with Specialization in Artificial Intelligence and Data Science,Group 1,OBC-NCL,393,324
+510,National Spot Round,"National Institute of Technology, Jamshedpur",Information Systems Security Engineering,Group 1,ST,252,252
+511,National Spot Round,"Indian Institute of Information Technology, Kota",Computer Science and Engineering with Specialization in Artificial Intelligence and Data Science,Group 1,EWS,323,323
+512,National Spot Round,"Indian Institute of Information Technology, Kota",Computer Science and Engineering with Specialization in Artificial Intelligence and Data Science,Group 1,OPEN,426,418
+513,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Signal Processing and Machine Learning,Group 1,EWS,323,323
+514,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Signal Processing and Machine Learning,Group 1,OPEN,366,350
+515,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Signal Processing and Machine Learning,Group 1,OBC-NCL,539,529
+516,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Signal Processing and Machine Learning,Group 2,OBC-NCL,456,436
+517,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Signal Processing and Machine Learning,Group 1,EWS,522,522
+518,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Signal Processing and Machine Learning,Group 2,EWS,440,440
+519,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Signal Processing and Machine Learning,Group 1,OPEN,597,597
+520,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Signal Processing and Machine Learning,Group 2,OPEN,479,467
+521,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Structural Dynamics & Earthquake Engineering,Group 1,OBC-NCL,363,363
+522,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Structural Dynamics & Earthquake Engineering,Group 1,OPEN,370,370
+523,National Spot Round,"National Institute of Technology, Rourkela",Software Engineering,Group 1,OBC-NCL,560,552
+524,National Spot Round,"National Institute of Technology, Rourkela",Software Engineering,Group 1,EWS,581,569
+525,National Spot Round,"National Institute of Technology, Rourkela",Software Engineering,Group 1,OPEN,612,605
+526,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Structural and Construction Engineering,Group 1,SC,258,258
+527,National Spot Round,"National Institute of Technology, Jamshedpur",Information Systems Security Engineering,Group 1,OBC-NCL,487,483
+528,National Spot Round,"National Institute of Technology, Jamshedpur",Information Systems Security Engineering,Group 1,EWS,469,468
+529,National Spot Round,"National Institute of Technology, Jamshedpur",Information Systems Security Engineering,Group 1,OPEN,526,518
+530,National Spot Round,"National Institute of Technology, Rourkela",Signal & Image Processing,Group 1,OBC-NCL,481,456
+531,National Spot Round,"National Institute of Technology, Rourkela",Signal & Image Processing,Group 1,EWS,413,413
+532,National Spot Round,"National Institute of Technology, Rourkela",Signal & Image Processing,Group 1,OPEN,577,503
+533,National Spot Round,"National Institute of Technology, Rourkela",Signal & Image Processing,Group 1,SC,335,335
+534,National Spot Round,National Institute of Technology Delhi,Mathematics & Computing (MC),Group 1,OBC-NCL,450,443
+535,National Spot Round,National Institute of Technology Delhi,Mathematics & Computing (MC),Group 1,OPEN,526,526
+536,National Spot Round,National Institute of Technology Delhi,Mathematics & Computing (MC),Group 1,SC,339,339
+537,National Spot Round,"National Institute of Technology, Silchar",Communication & Signal Processing,Group 1,OBC-NCL,315,315
+538,National Spot Round,"National Institute of Technology, Silchar",Communication & Signal Processing,Group 1,OPEN,364,364
+539,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Signal Processing,Group 1,OBC-NCL,416,416
+540,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Signal Processing,Group 1,EWS,397,397
+541,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Signal Processing,Group 1,OPEN,452,452
+542,National Spot Round,National Institute of Technology Calicut,Signal Processing,Group 1,OBC-NCL,436,405
+543,National Spot Round,National Institute of Technology Calicut,Signal Processing,Group 1,EWS,380,340
+544,National Spot Round,National Institute of Technology Calicut,Signal Processing,Group 1,OPEN,444,444
+545,National Spot Round,National Institute of Technology Calicut,Signal Processing,Group 1,SC,280,280
+546,National Spot Round,Malaviya National Institute of Technology Jaipur,Structural Engineering,Group 1,OPEN,412,412
+547,National Spot Round,Malaviya National Institute of Technology Jaipur,Structural Engineering,Group 1,SC,329,329
+548,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Structural Engineering,Group 1,SC,243,243
+549,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Structural Engineering,Group 1,SC,268,268
+550,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Structural Engineering,Group 1,OBC-NCL,358,358
+551,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Structural Engineering,Group 1,EWS,340,340
+552,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Structural Engineering,Group 1,OPEN,378,378
+553,National Spot Round,"National Institute of Technology, Rourkela",Structural Engineering,Group 1,OBC-NCL,370,332
+554,National Spot Round,"National Institute of Technology, Tiruchirappalli",Structural Engineering,Group 1,SC,332,332
+555,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Structural Engineering,Group 1,OBC-NCL,352,352
+556,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Structural Engineering,Group 1,EWS,378,378
+557,National Spot Round,National Institute of Technology Patna,Structural Engineering,Group 1,OPEN,366,363
+558,National Spot Round,"National Institute of Technology, Kurukshetra",Structural Engineering,Group 1,OPEN,374,374
+559,National Spot Round,National Institute of Technology Calicut,Structural Engineering,Group 1,OPEN,431,431
+560,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Structural Engineering,Group 1,OBC-NCL,457,434
+561,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Structural Engineering,Group 1,OPEN,472,472
+562,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Structural Engineering,Group 1,SC,294,291
+563,National Spot Round,National Institute of Technology Patna,Structural Engineering,Group 1,EWS,328,328
+564,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Structural Engineering,Group 1,OBC-NCL,345,317
+565,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Structural Engineering,Group 1,OPEN,505,505
+566,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Structural Engineering,Group 1,OBC-NCL,416,359
+567,National Spot Round,National Institute of Technology Calicut,Structural Engineering,Group 1,OBC-NCL,431,397
+568,National Spot Round,"Indian Institute of Information Technology, Allahabad",M.Tech (Bioinformatics),Group 1,OPEN,413,413
+569,National Spot Round,Malaviya National Institute of Technology Jaipur,Transportation Engineering,Group 1,SC,293,293
+570,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Transportation Engineering,Group 1,OPEN,359,359
+571,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Transportation Engineering,Group 1,SC,294,294
+572,National Spot Round,"National Institute of Technology, Rourkela",Transportation Engineering,Group 1,OBC-NCL,317,317
+573,National Spot Round,"National Institute of Technology, Rourkela",Transportation Engineering,Group 1,OPEN,385,385
+574,National Spot Round,"National Institute of Technology, Rourkela",Transportation Engineering,Group 1,SC,279,279
+575,National Spot Round,"National Institute of Technology, Warangal",Transportation Engineering,Group 1,OBC-NCL,359,344
+576,National Spot Round,"National Institute of Technology, Warangal",Transportation Engineering,Group 1,OPEN,401,401
+577,National Spot Round,"National Institute of Technology, Warangal",Transportation Engineering,Group 1,SC,260,260
+578,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Transportation Engineering,Group 1,OPEN,351,351
+579,National Spot Round,"National Institute of Technology, Tiruchirappalli",Transportation Engineering & Management,Group 1,OBC-NCL,393,344
+580,National Spot Round,"National Institute of Technology, Tiruchirappalli",Transportation Engineering & Management,Group 1,EWS,363,363
+581,National Spot Round,"National Institute of Technology, Tiruchirappalli",Transportation Engineering & Management,Group 1,OPEN,404,401
+582,National Spot Round,"National Institute of Technology, Tiruchirappalli",Transportation Engineering & Management,Group 1,SC,325,325
+583,National Spot Round,Malaviya National Institute of Technology Jaipur,Thermal Engineering,Group 1,OPEN,408,408
+584,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Thermal Engineering,Group 1,OBC-NCL,328,328
+585,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Thermal Engineering,Group 1,EWS,411,411
+586,National Spot Round,"National Institute of Technology, Jamshedpur",Thermal Engineering,Group 1,OPEN,366,366
+587,National Spot Round,"National Institute of Technology, Warangal",Thermal Engineering,Group 1,OBC-NCL,314,314
+588,National Spot Round,"National Institute of Technology, Warangal",Thermal Engineering,Group 1,EWS,345,345
+589,National Spot Round,"National Institute of Technology, Warangal",Thermal Engineering,Group 1,OPEN,407,355
+590,National Spot Round,"National Institute of Technology, Warangal",Thermal Engineering,Group 1,SC,235,235
+591,National Spot Round,National Institute of Technology Durgapur,Power System,Group 1,OBC-NCL,323,323
+592,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Power System,Group 1,OPEN,367,367
+593,National Spot Round,National Institute of Technology Calicut,Telecommunication,Group 1,OBC-NCL,395,381
+594,National Spot Round,National Institute of Technology Calicut,Telecommunication,Group 1,EWS,370,354
+595,National Spot Round,National Institute of Technology Calicut,Telecommunication,Group 1,OPEN,428,397
+596,National Spot Round,"National Institute of Technology, Rourkela",Geo-technical Engineering,Group 1,ST,245,245
+597,National Spot Round,"National Institute of Technology, Warangal",Geo-technical Engineering,Group 1,OPEN,451,363
+598,National Spot Round,"National Institute of Technology, Warangal",Geo-technical Engineering,Group 1,SC,277,264
+599,National Spot Round,"National Institute of Technology, Tiruchirappalli",Thermal Power Engineering,Group 1,OBC-NCL,418,355
+600,National Spot Round,"National Institute of Technology, Tiruchirappalli",Thermal Power Engineering,Group 1,OPEN,480,466
+601,National Spot Round,National Institute of Technology Calicut,Traffic & Transportation Planning,Group 1,OBC-NCL,322,322
+602,National Spot Round,National Institute of Technology Calicut,Traffic & Transportation Planning,Group 1,OPEN,366,363
+603,National Spot Round,National Institute of Technology Calicut,Traffic & Transportation Planning,Group 1,SC,283,254
+604,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Urban Planning,Group 1,SC,249,187
+605,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Urban & Regional Planning,Group 1,SC,181,181
+606,National Spot Round,National Institute of Technology Hamirpur,Electronics & Communication Engineering (Communications System and Networks),Group 1,SC,264,264
+607,National Spot Round,National Institute of Technology Hamirpur,Electronics & Communication Engineering (VLSI Design),Group 1,OBC-NCL,350,334
+608,National Spot Round,National Institute of Technology Hamirpur,Electronics & Communication Engineering (VLSI Design),Group 1,EWS,350,342
+609,National Spot Round,National Institute of Technology Hamirpur,Electronics & Communication Engineering (VLSI Design),Group 1,OPEN,401,397
+610,National Spot Round,"Indian Institute of Information Technology, Allahabad",M.Tech. ECE with specialization in Microelectronics,Group 1,OBC-NCL,479,444
+611,National Spot Round,"Indian Institute of Information Technology, Allahabad",M.Tech. ECE with specialization in Microelectronics,Group 1,OPEN,482,482
+612,National Spot Round,"Indian Institute of Information Technology, Allahabad",M.Tech. ECE with specialization in Microelectronics,Group 1,SC,276,276
+613,National Spot Round,"Indian Institute of Information Technology, Allahabad",M.Tech. ECE with specialization in Communication Engineering,Group 1,OPEN,370,358
+614,National Spot Round,"Indian Institute of Information Technology, Allahabad",Dual Degree M.Tech. –PhD in ECE with specialization in Microelectronics,Group 1,OBC-NCL,342,342
+615,National Spot Round,"Indian Institute of Information Technology, Allahabad",Dual Degree M.Tech. –PhD in ECE with specialization in Microelectronics,Group 1,SC,256,256
+616,National Spot Round,"Indian Institute of Information Technology, Allahabad","M.Tech. IT with specialization in Machine Learning, Robotics and Human Computer Interaction Group",Group 1,OBC-NCL,555,546
+617,National Spot Round,"Indian Institute of Information Technology, Allahabad","M.Tech. IT with specialization in Machine Learning, Robotics and Human Computer Interaction Group",Group 1,EWS,552,539
+618,National Spot Round,"Indian Institute of Information Technology, Allahabad","M.Tech. IT with specialization in Machine Learning, Robotics and Human Computer Interaction Group",Group 1,OPEN,595,589
+619,National Spot Round,"Indian Institute of Information Technology, Allahabad","M.Tech. IT with specialization in Machine Learning, Robotics and Human Computer Interaction Group",Group 1,SC,418,418
+620,National Spot Round,"Indian Institute of Information Technology, Allahabad","M.Tech. IT with specialization in Machine Learning, Robotics and Human Computer Interaction Group",Group 1,ST,272,272
+621,National Spot Round,"Indian Institute of Information Technology, Allahabad","Dual Degree M.Tech. - Ph.D in IT with specialization in Machine Learning, Robotics and Human Computer Interaction Group",Group 1,OPEN,617,617
+622,National Spot Round,"Indian Institute of Information Technology, Allahabad",M.Tech. IT with specialization in Software and Data Engineering Group,Group 1,OBC-NCL,556,552
+623,National Spot Round,"Indian Institute of Information Technology, Allahabad",M.Tech. IT with specialization in Software and Data Engineering Group,Group 1,EWS,581,552
+624,National Spot Round,"Indian Institute of Information Technology, Allahabad",M.Tech. IT with specialization in Software and Data Engineering Group,Group 1,OPEN,605,592
+625,National Spot Round,"Indian Institute of Information Technology, Allahabad",M.Tech. IT with specialization in Software and Data Engineering Group,Group 1,SC,420,420
+626,National Spot Round,"Indian Institute of Information Technology, Allahabad",Dual Degree M.Tech. - Ph.D in IT with specialization in Software and Data Engineering Group,Group 1,OPEN,531,531
+627,National Spot Round,"Indian Institute of Information Technology, Allahabad",M.Tech. IT with specialization in Network and Security Group,Group 1,OBC-NCL,539,527
+628,National Spot Round,"Indian Institute of Information Technology, Allahabad",M.Tech. IT with specialization in Network and Security Group,Group 1,EWS,536,526
+629,National Spot Round,"Indian Institute of Information Technology, Allahabad",M.Tech. IT with specialization in Network and Security Group,Group 1,OPEN,585,556
+630,National Spot Round,National Institute of Technology Patna,Microelectronics and VLSI System Design,Group 1,OBC-NCL,381,342
+631,National Spot Round,National Institute of Technology Patna,Microelectronics and VLSI System Design,Group 1,EWS,367,367
+632,National Spot Round,National Institute of Technology Patna,Microelectronics and VLSI System Design,Group 1,OPEN,424,389
+633,National Spot Round,National Institute of Technology Patna,Microelectronics and VLSI System Design,Group 1,SC,280,280
+634,National Spot Round,National Institute of Technology Patna,Microelectronics and VLSI System Design,Group 1,ST,259,259
+635,National Spot Round,"National Institute of Technology, Warangal",VLSI Systems Design,Group 1,OBC-NCL,584,584
+636,National Spot Round,"National Institute of Technology, Warangal",VLSI Systems Design,Group 1,EWS,565,565
+637,National Spot Round,"National Institute of Technology, Warangal",VLSI Systems Design,Group 1,OPEN,616,616
+638,National Spot Round,Maulana Azad National Institute of Technology Bhopal,VLSI Design & Embedded Systems,Group 1,OBC-NCL,416,405
+639,National Spot Round,Maulana Azad National Institute of Technology Bhopal,VLSI Design & Embedded Systems,Group 1,EWS,405,405
+640,National Spot Round,Maulana Azad National Institute of Technology Bhopal,VLSI Design & Embedded Systems,Group 1,OPEN,467,428
+641,National Spot Round,Maulana Azad National Institute of Technology Bhopal,VLSI Design & Embedded Systems,Group 1,SC,299,299
+642,National Spot Round,"National Institute of Technology, Rourkela",VLSI Design & Embedded Systems,Group 1,OBC-NCL,565,561
+643,National Spot Round,"National Institute of Technology, Rourkela",VLSI Design & Embedded Systems,Group 1,OPEN,604,581
+644,National Spot Round,"National Institute of Technology, Rourkela",VLSI Design & Embedded Systems,Group 1,ST,295,295
+645,National Spot Round,"National Institute of Technology, Kurukshetra",Embedded System Design,Group 1,OBC-NCL,420,397
+646,National Spot Round,"National Institute of Technology, Kurukshetra",Embedded System Design,Group 1,OPEN,467,448
+647,National Spot Round,"National Institute of Technology, Kurukshetra",Embedded System Design,Group 1,SC,276,271
+648,National Spot Round,"Punjab Engineering College, Chandigarh",Electronics (VLSI Design),Group 1,OPEN,400,354
+649,National Spot Round,"Punjab Engineering College, Chandigarh",Electronics (VLSI Design),Group 1,SC,264,264
+650,National Spot Round,"Indian Institute of Information Technology, Allahabad",Dual Degree M.Tech. - Ph.D in IT with specialization in Network and Security Group,Group 1,OBC-NCL,423,423
+651,National Spot Round,"Indian Institute of Information Technology, Allahabad",Dual Degree M.Tech. - Ph.D in IT with specialization in Network and Security Group,Group 1,OPEN,479,479
+652,National Spot Round,Indian Institute of Information Technology Tiruchirappalli,VLSI Systems,Group 1,OBC-NCL,330,330
+653,National Spot Round,Indian Institute of Information Technology Tiruchirappalli,VLSI Systems,Group 1,OPEN,487,364
+654,National Spot Round,Indian Institute of Information Technology Tiruchirappalli,VLSI Systems,Group 1,SC,264,264
+655,National Spot Round,National Institute of Technology Goa,VLSI,Group 1,OBC-NCL,420,405
+656,National Spot Round,National Institute of Technology Goa,VLSI,Group 1,EWS,393,385
+657,National Spot Round,National Institute of Technology Goa,VLSI,Group 1,OPEN,479,448
+658,National Spot Round,Maulana Azad National Institute of Technology Bhopal,M.Tech Agile Software Engineering,Group 1,OBC-NCL,423,410
+659,National Spot Round,Maulana Azad National Institute of Technology Bhopal,M.Tech Agile Software Engineering,Group 1,OPEN,485,460
+660,National Spot Round,Maulana Azad National Institute of Technology Bhopal,M.Tech Agile Software Engineering,Group 1,SC,298,298
+661,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",VLSI Design,Group 1,OBC-NCL,432,416
+662,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",VLSI Design,Group 1,EWS,424,397
+663,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",VLSI Design,Group 1,OPEN,499,449
+664,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",VLSI Design,Group 1,SC,303,303
+665,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",VLSI Design,Group 1,OPEN,444,440
+666,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",VLSI Design,Group 1,SC,330,330
+667,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",VLSI Design,Group 1,OPEN,413,385
+668,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",VLSI Design,Group 1,SC,258,258
+669,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",VLSI Design,Group 1,OBC-NCL,429,410
+670,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",VLSI Design,Group 1,EWS,393,377
+671,National Spot Round,"National Institute of Technology, Kurukshetra",VLSI Design,Group 1,OPEN,561,530
+672,National Spot Round,"National Institute of Technology, Kurukshetra",VLSI Design,Group 1,SC,307,307
+673,National Spot Round,National Institute of Technology Puducherry,VLSI Design,Group 1,OBC-NCL,370,370
+674,National Spot Round,National Institute of Technology Puducherry,VLSI Design,Group 1,OPEN,389,384
+675,National Spot Round,National Institute of Technology Puducherry,VLSI Design,Group 1,SC,280,280
+676,National Spot Round,"National Institute of Technology, Kurukshetra",VLSI Design,Group 1,OBC-NCL,495,479
+677,National Spot Round,"National Institute of Technology Karnataka, Surathkal",VLSI Design,Group 2,SC,370,370
+678,National Spot Round,Malaviya National Institute of Technology Jaipur,VLSI Design,Group 1,SC,358,358
+679,National Spot Round,National Institute of Technology Agartala,VLSI Design,Group 1,SC,252,252
+680,National Spot Round,Malaviya National Institute of Technology Jaipur,VLSI Design,Group 1,OBC-NCL,479,463
+681,National Spot Round,Malaviya National Institute of Technology Jaipur,VLSI Design,Group 2,OBC-NCL,463,463
+682,National Spot Round,Malaviya National Institute of Technology Jaipur,VLSI Design,Group 1,EWS,475,475
+683,National Spot Round,Malaviya National Institute of Technology Jaipur,VLSI Design,Group 2,EWS,464,464
+684,National Spot Round,Malaviya National Institute of Technology Jaipur,VLSI Design,Group 1,OPEN,518,518
+685,National Spot Round,Malaviya National Institute of Technology Jaipur,VLSI Design,Group 2,OPEN,510,510
+686,National Spot Round,National Institute of Technology Raipur,VLSI & Embedded Systems,Group 1,OBC-NCL,380,354
+687,National Spot Round,National Institute of Technology Raipur,VLSI & Embedded Systems,Group 2,OBC-NCL,350,334
+688,National Spot Round,National Institute of Technology Raipur,VLSI & Embedded Systems,Group 1,EWS,366,350
+689,National Spot Round,National Institute of Technology Raipur,VLSI & Embedded Systems,Group 1,OPEN,393,385
+690,National Spot Round,National Institute of Technology Raipur,VLSI & Embedded Systems,Group 2,OPEN,398,381
+691,National Spot Round,National Institute of Technology Raipur,VLSI & Embedded Systems,Group 1,SC,291,291
+692,National Spot Round,National Institute of Technology Raipur,VLSI & Embedded Systems,Group 2,SC,291,291
+693,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",VLSI & Embedded Systems,Group 1,OBC-NCL,444,432
+694,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",VLSI & Embedded Systems,Group 1,OPEN,484,483
+695,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",VLSI & Embedded Systems,Group 1,SC,303,286
+696,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",VLSI & Embedded Systems,Group 1,ST,272,272
+697,National Spot Round,National Institute of Technology Delhi,Electronics and Communication Engineering with specialisation in VLSI,Group 1,OBC-NCL,432,432
+698,National Spot Round,National Institute of Technology Delhi,Electronics and Communication Engineering with specialisation in VLSI,Group 1,OPEN,491,491
+699,National Spot Round,National Institute of Technology Delhi,Electronics and Communication Engineering with specialisation in VLSI,Group 1,SC,323,323
+700,National Spot Round,National Institute of Technology Delhi,Electronics and Communication Engineering with specialisation in VLSI,Group 1,ST,260,260
+701,National Spot Round,National Institute of Technology Calicut,Water Resource Engineering,Group 1,OBC-NCL,349,349
+702,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Wireless Networks and Computing,Group 1,OBC-NCL,364,335
+703,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Wireless Networks and Computing,Group 1,EWS,354,354
+704,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Wireless Networks and Computing,Group 1,OPEN,412,387
+705,National Spot Round,Atal Bihari Vajpayee Indian Institute of Information Technology & Management Gwalior,Wireless Networks and Computing,Group 1,SC,280,280
+706,National Spot Round,Malaviya National Institute of Technology Jaipur,Water Resources Engineering,Group 1,SC,264,264
+707,National Spot Round,Malaviya National Institute of Technology Jaipur,Water Resources Engineering,Group 1,ST,275,275
+708,National Spot Round,National Institute of Technology Hamirpur,Computer Science & Engineering (Artificial Intelligence),Group 1,OBC-NCL,460,436
+709,National Spot Round,National Institute of Technology Hamirpur,Computer Science & Engineering (Artificial Intelligence),Group 1,EWS,450,450
+710,National Spot Round,National Institute of Technology Hamirpur,Computer Science & Engineering (Artificial Intelligence),Group 1,OPEN,506,496
+711,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Computer Science & Engineering (Artificial Intelligence),Group 1,OBC-NCL,377,377
+712,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Computer Science & Engineering (Artificial Intelligence),Group 1,OPEN,485,485
+713,National Spot Round,"Defence Institute of Advanced Technology (Deemed to be University), Girinagar, Pune",Computer Science & Engineering (Artificial Intelligence),Group 1,SC,337,284
+714,National Spot Round,"National Institute of Technology, Kurukshetra",Computer Engineering,Group 1,OBC-NCL,523,510
+715,National Spot Round,"National Institute of Technology, Kurukshetra",Computer Engineering,Group 1,EWS,536,529
+716,National Spot Round,"National Institute of Technology, Kurukshetra",Computer Engineering,Group 1,OPEN,562,546
+717,National Spot Round,"National Institute of Technology, Kurukshetra",Computer Engineering,Group 1,SC,381,381
+718,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Computer Science & Engineering (Information Security),Group 1,OBC-NCL,473,473
+719,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Computer Science & Engineering (Information Security),Group 1,EWS,456,456
+720,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Computer Science & Engineering (Information Security),Group 1,OPEN,506,506
+721,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Computer Science & Engineering (Information Security),Group 1,SC,337,337
+722,National Spot Round,National Institute of Technology Calicut,Computer Science & Engineering (Information Security),Group 1,OBC-NCL,589,560
+723,National Spot Round,National Institute of Technology Calicut,Computer Science & Engineering (Information Security),Group 1,EWS,572,562
+724,National Spot Round,National Institute of Technology Calicut,Computer Science & Engineering (Information Security),Group 1,OPEN,622,605
+725,National Spot Round,National Institute of Technology Calicut,Computer Science & Engineering (Information Security),Group 1,SC,440,440
+726,National Spot Round,National Institute of Technology Calicut,Computer Science & Engineering (Information Security),Group 1,ST,335,335
+727,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Computer Science & Engineering (Information Security),Group 1,OBC-NCL,648,628
+728,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Computer Science & Engineering (Information Security),Group 1,EWS,685,672
+729,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Computer Science & Engineering (Information Security),Group 1,OPEN,710,688
+730,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Computer Science & Engineering,Group 1,OBC-NCL,499,485
+731,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Computer Science & Engineering,Group 1,OPEN,552,536
+732,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Computer Science & Engineering,Group 1,SC,370,346
+733,National Spot Round,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Computer Science & Engineering,Group 1,ST,277,264
+734,National Spot Round,Malaviya National Institute of Technology Jaipur,Computer Science & Engineering,Group 1,OBC-NCL,585,581
+735,National Spot Round,Malaviya National Institute of Technology Jaipur,Computer Science & Engineering,Group 1,EWS,618,618
+736,National Spot Round,"Guru Ghasidas Vishwavidyalaya, Bilaspur",Computer Science & Engineering,Group 1,SC,339,339
+737,National Spot Round,"Jawaharlal Nehru University, New Delhi",Computer Science & Engineering,Group 1,OBC-NCL,427,407
+738,National Spot Round,"Jawaharlal Nehru University, New Delhi",Computer Science & Engineering,Group 1,EWS,439,439
+739,National Spot Round,"Jawaharlal Nehru University, New Delhi",Computer Science & Engineering,Group 1,OPEN,526,526
+740,National Spot Round,"Jawaharlal Nehru University, New Delhi",Computer Science & Engineering,Group 1,SC,264,264
+741,National Spot Round,"Punjab Engineering College, Chandigarh",Computer Science & Engineering,Group 1,OPEN,431,413
+742,National Spot Round,"International Institute of Information Technology, Bhubaneswar",Computer Science & Engineering,Group 1,OBC-NCL,356,327
+743,National Spot Round,"International Institute of Information Technology, Bhubaneswar",Computer Science & Engineering,Group 1,EWS,377,330
+744,National Spot Round,"International Institute of Information Technology, Bhubaneswar",Computer Science & Engineering,Group 1,OPEN,432,409
+745,National Spot Round,"International Institute of Information Technology, Bhubaneswar",Computer Science & Engineering,Group 1,SC,295,295
+746,National Spot Round,Central University of Rajasthan,Computer Science & Engineering,Group 1,OPEN,377,377
+747,National Spot Round,"Indian Institute of Information Technology, Pune",Computer Science & Engineering,Group 1,EWS,448,448
+748,National Spot Round,"Indian Institute of Information Technology, Pune",Computer Science & Engineering,Group 1,OPEN,535,493
+749,National Spot Round,"International Institute of Information Technology, Naya Raipur",Computer Science & Engineering,Group 1,OBC-NCL,356,356
+750,National Spot Round,"International Institute of Information Technology, Naya Raipur",Computer Science & Engineering,Group 1,EWS,381,381
+751,National Spot Round,"International Institute of Information Technology, Naya Raipur",Computer Science & Engineering,Group 1,OPEN,435,432
+752,National Spot Round,"International Institute of Information Technology, Naya Raipur",Computer Science & Engineering,Group 1,SC,254,254
+753,National Spot Round,Indian Institute of Information Technology Tiruchirappalli,Computer Science & Engineering,Group 1,SC,313,264
+754,National Spot Round,"Indian Institute of Information Technology, Design and Manufacturing, Kurnool",Computer Science & Engineering,Group 1,OBC-NCL,316,316
+755,National Spot Round,"Indian Institute of Information Technology, Design and Manufacturing, Kurnool",Computer Science & Engineering,Group 1,EWS,335,335
+756,National Spot Round,"Indian Institute of Information Technology, Design and Manufacturing, Kurnool",Computer Science & Engineering,Group 1,OPEN,410,407
+757,National Spot Round,"Indian Institute of Information Technology, Design and Manufacturing, Kurnool",Computer Science & Engineering,Group 1,ST,197,197
+758,National Spot Round,"Indian Institute of Information Technology, Pune",Computer Science & Engineering,Group 1,OBC-NCL,448,448
+759,National Spot Round,Indian Institute of Information Technology Tiruchirappalli,Computer Science & Engineering,Group 1,OBC-NCL,409,364
+760,National Spot Round,Indian Institute of Information Technology Tiruchirappalli,Computer Science & Engineering,Group 1,EWS,397,397
+761,National Spot Round,Indian Institute of Information Technology Tiruchirappalli,Computer Science & Engineering,Group 1,OPEN,473,412
+762,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Computer Science & Engineering,Group 1,OBC-NCL,414,400
+763,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Computer Science & Engineering,Group 1,EWS,448,433
+764,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Computer Science & Engineering,Group 1,OPEN,532,464
+765,National Spot Round,"Indian Institute of Engineering Science and Technology, Shibpur, District Howrah",Computer Science & Engineering,Group 1,SC,324,324
+766,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Computer Science & Engineering,Group 1,EWS,539,489
+767,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Computer Science & Engineering,Group 1,OPEN,579,564
+768,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Computer Science & Engineering,Group 1,ST,301,301
+769,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Computer Science & Engineering,Group 1,OBC-NCL,568,552
+770,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Computer Science & Engineering,Group 1,EWS,569,542
+771,National Spot Round,"Visvesvaraya National Institute of Technology, Nagpur",Computer Science & Engineering,Group 1,OPEN,597,585
+772,National Spot Round,"National Institute of Technology, Warangal",Computer Science & Engineering,Group 1,OBC-NCL,698,661
+773,National Spot Round,"National Institute of Technology, Warangal",Computer Science & Engineering,Group 1,EWS,706,702
+774,National Spot Round,"National Institute of Technology, Warangal",Computer Science & Engineering,Group 1,OPEN,727,727
+775,National Spot Round,"Sardar Vallabhbhai National Institute of Technology, Surat",Computer Science & Engineering,Group 1,OBC-NCL,536,526
+776,National Spot Round,"National Institute of Technology, Tiruchirappalli",Computer Science & Engineering,Group 1,OBC-NCL,685,675
+777,National Spot Round,"National Institute of Technology, Tiruchirappalli",Computer Science & Engineering,Group 1,EWS,718,710
+778,National Spot Round,"National Institute of Technology, Tiruchirappalli",Computer Science & Engineering,Group 1,OPEN,743,731
+779,National Spot Round,"National Institute of Technology, Tiruchirappalli",Computer Science & Engineering,Group 1,SC,542,531
+780,National Spot Round,"National Institute of Technology, Silchar",Computer Science & Engineering,Group 1,OPEN,516,503
+781,National Spot Round,"National Institute of Technology, Silchar",Computer Science & Engineering,Group 1,SC,339,339
+782,National Spot Round,"National Institute of Technology, Srinagar",Computer Science & Engineering,Group 1,OBC-NCL,356,323
+783,National Spot Round,"National Institute of Technology, Srinagar",Computer Science & Engineering,Group 1,EWS,373,373
+784,National Spot Round,"National Institute of Technology, Srinagar",Computer Science & Engineering,Group 1,OPEN,431,420
+785,National Spot Round,"National Institute of Technology, Srinagar",Computer Science & Engineering,Group 1,SC,291,291
+786,National Spot Round,"National Institute of Technology, Manipur",Computer Science & Engineering,Group 1,OPEN,389,357
+787,National Spot Round,National Institute of Technology Mizoram,Computer Science & Engineering,Group 1,OBC-NCL,327,327
+788,National Spot Round,National Institute of Technology Mizoram,Computer Science & Engineering,Group 1,OPEN,357,350
+789,National Spot Round,National Institute of Technology Mizoram,Computer Science & Engineering,Group 1,SC,256,256
+790,National Spot Round,"National Institute of Technology, Silchar",Computer Science & Engineering,Group 1,OBC-NCL,477,446
+791,National Spot Round,"National Institute of Technology, Silchar",Computer Science & Engineering,Group 1,EWS,468,468
+792,National Spot Round,National Institute of Technology Arunachal Pradesh,Computer Science & Engineering,Group 1,SC,264,264
+793,National Spot Round,"National Institute of Technology, Jamshedpur",Computer Science & Engineering,Group 1,OBC-NCL,527,527
+794,National Spot Round,"National Institute of Technology, Jamshedpur",Computer Science & Engineering,Group 1,EWS,512,481
+795,National Spot Round,"National Institute of Technology, Jamshedpur",Computer Science & Engineering,Group 1,OPEN,577,556
+796,National Spot Round,"National Institute of Technology, Manipur",Computer Science & Engineering,Group 1,OBC-NCL,323,323
+797,National Spot Round,"National Institute of Technology, Manipur",Computer Science & Engineering,Group 1,EWS,344,344
+798,National Spot Round,National Institute of Technology Puducherry,Computer Science & Engineering,Group 1,EWS,407,407
+799,National Spot Round,National Institute of Technology Puducherry,Computer Science & Engineering,Group 1,OPEN,539,496
+800,National Spot Round,National Institute of Technology Puducherry,Computer Science & Engineering,Group 1,SC,368,368
+801,National Spot Round,National Institute of Technology Puducherry,Computer Science & Engineering,Group 1,ST,260,260
+802,National Spot Round,National Institute of Technology Arunachal Pradesh,Computer Science & Engineering,Group 1,OBC-NCL,334,323
+803,National Spot Round,National Institute of Technology Arunachal Pradesh,Computer Science & Engineering,Group 1,OPEN,384,360
+804,National Spot Round,National Institute of Technology Meghalaya,Computer Science & Engineering,Group 1,EWS,364,364
+805,National Spot Round,National Institute of Technology Meghalaya,Computer Science & Engineering,Group 1,OPEN,424,387
+806,National Spot Round,National Institute of Technology Nagaland,Computer Science & Engineering,Group 1,OBC-NCL,327,327
+807,National Spot Round,National Institute of Technology Nagaland,Computer Science & Engineering,Group 1,OPEN,350,350
+808,National Spot Round,National Institute of Technology Nagaland,Computer Science & Engineering,Group 1,SC,256,235
+809,National Spot Round,National Institute of Technology Puducherry,Computer Science & Engineering,Group 1,OBC-NCL,426,426
+810,National Spot Round,National Institute of Technology Hamirpur,Computer Science & Engineering,Group 1,SC,328,328
+811,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Computer Science & Engineering,Group 1,OBC-NCL,668,655
+812,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Computer Science & Engineering,Group 1,EWS,698,688
+813,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Computer Science & Engineering,Group 1,OPEN,722,721
+814,National Spot Round,"National Institute of Technology Karnataka, Surathkal",Computer Science & Engineering,Group 1,SC,502,499
+815,National Spot Round,National Institute of Technology Meghalaya,Computer Science & Engineering,Group 1,OBC-NCL,356,353
+816,National Spot Round,National Institute of Technology Goa,Computer Science & Engineering,Group 1,OBC-NCL,473,450
+817,National Spot Round,National Institute of Technology Goa,Computer Science & Engineering,Group 1,EWS,446,443
+818,National Spot Round,National Institute of Technology Goa,Computer Science & Engineering,Group 1,OPEN,602,487
+819,National Spot Round,National Institute of Technology Hamirpur,Computer Science & Engineering,Group 1,OBC-NCL,463,452
+820,National Spot Round,National Institute of Technology Hamirpur,Computer Science & Engineering,Group 1,EWS,466,466
+821,National Spot Round,National Institute of Technology Hamirpur,Computer Science & Engineering,Group 1,OPEN,516,516
+822,National Spot Round,National Institute of Technology Durgapur,Computer Science & Engineering,Group 1,OBC-NCL,542,514
+823,National Spot Round,National Institute of Technology Durgapur,Computer Science & Engineering,Group 1,EWS,483,483
+824,National Spot Round,National Institute of Technology Durgapur,Computer Science & Engineering,Group 1,OPEN,556,552
+825,National Spot Round,National Institute of Technology Durgapur,Computer Science & Engineering,Group 1,SC,418,347
+826,National Spot Round,National Institute of Technology Durgapur,Computer Science & Engineering,Group 1,ST,283,283
+827,National Spot Round,National Institute of Technology Calicut,Computer Science & Engineering,Group 1,OPEN,681,641
+828,National Spot Round,National Institute of Technology Calicut,Computer Science & Engineering,Group 1,SC,463,451
+829,National Spot Round,National Institute of Technology Delhi,Computer Science & Engineering,Group 1,OBC-NCL,535,527
+830,National Spot Round,National Institute of Technology Delhi,Computer Science & Engineering,Group 1,OPEN,605,605
+831,National Spot Round,National Institute of Technology Delhi,Computer Science & Engineering,Group 1,SC,400,400
+832,National Spot Round,Malaviya National Institute of Technology Jaipur,Computer Science & Engineering,Group 1,OPEN,638,635
+833,National Spot Round,Malaviya National Institute of Technology Jaipur,Computer Science & Engineering,Group 1,SC,440,440
+834,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Computer Science & Engineering,Group 1,OBC-NCL,610,597
+835,National Spot Round,Motilal Nehru National Institute of Technology Allahabad,Computer Science & Engineering,Group 1,SC,456,456
+836,National Spot Round,National Institute of Technology Calicut,Computer Science & Engineering,Group 1,OBC-NCL,606,596
+837,National Spot Round,National Institute of Technology Calicut,Computer Science & Engineering,Group 1,EWS,606,572
+838,National Spot Round,"National Institute of Technology, Warangal",Computer Integrated Manufacturing,Group 1,OBC-NCL,390,390
+839,National Spot Round,"National Institute of Technology, Rourkela",Computer Science,Group 1,OBC-NCL,622,602
+840,National Spot Round,"National Institute of Technology, Rourkela",Computer Science,Group 1,EWS,631,618
+841,National Spot Round,"National Institute of Technology, Rourkela",Computer Science,Group 1,OPEN,656,645
+842,National Spot Round,"National Institute of Technology, Rourkela",Computer Science,Group 1,SC,477,459
+843,National Spot Round,"Indian Institute of Information Technology, Lucknow",Computer Science,Group 1,OBC-NCL,510,479
+844,National Spot Round,University of Hyderabad,Computer Science,Group 1,EWS,364,364
+845,National Spot Round,University of Hyderabad,Computer Science,Group 1,OPEN,552,440
+846,National Spot Round,"Indian Institute of Information Technology, Lucknow",Computer Science,Group 1,EWS,456,436
+847,National Spot Round,"Indian Institute of Information Technology, Lucknow",Computer Science,Group 1,OPEN,580,523
+848,National Spot Round,"Indian Institute of Information Technology, Lucknow",Computer Science,Group 1,SC,335,317
+849,National Spot Round,"Indian Institute of Information Technology, Lucknow",Computer Science,Group 1,ST,256,256
+850,National Spot Round,University of Hyderabad,Computer Science,Group 1,OBC-NCL,377,368
+851,National Spot Round,National Institute of Technology Delhi,Computer Science & Engineering (Analytics),Group 1,OBC-NCL,519,510
+852,National Spot Round,National Institute of Technology Delhi,Computer Science & Engineering (Analytics),Group 1,EWS,531,493
+853,National Spot Round,National Institute of Technology Delhi,Computer Science & Engineering (Analytics),Group 1,OPEN,579,562
+854,National Spot Round,National Institute of Technology Delhi,Computer Science & Engineering (Analytics),Group 1,SC,389,389
+855,National Spot Round,National Institute of Technology Delhi,Computer Science & Engineering (Analytics),Group 1,ST,311,311
+856,National Spot Round,"Indian Institute of Information Technology, Design and Manufacturing, Kurnool",Computer Science and Engineering (Cyber Security),Group 1,OPEN,393,384
+857,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Computer Networking,Group 1,OBC-NCL,443,436
+858,National Spot Round,Maulana Azad National Institute of Technology Bhopal,Computer Networking,Group 1,OPEN,498,487
+859,National Spot Round,"Punjab Engineering College, Chandigarh",Electrical Engineering,Group 1,SC,311,311
+860,National Spot Round,National Institute of Technology Hamirpur,Electrical Engineering (Signal Processing & Control),Group 1,SC,252,252
+861,National Spot Round,National Institute of Technology Durgapur,Artificial Intelligence & Data Science,Group 1,OBC-NCL,526,499
+862,National Spot Round,National Institute of Technology Durgapur,Artificial Intelligence & Data Science,Group 1,OPEN,560,560
+863,National Spot Round,National Institute of Technology Durgapur,Artificial Intelligence & Data Science,Group 1,SC,350,339
+864,National Spot Round,"Indian Institute of Information Technology, Design and Manufacturing, Kurnool",Artificial Intelligence & Data Science,Group 1,OBC-NCL,335,335
+865,National Spot Round,"Indian Institute of Information Technology, Design and Manufacturing, Kurnool",Artificial Intelligence & Data Science,Group 1,OPEN,443,407
+866,National Spot Round,"Indian Institute of Information Technology, Design and Manufacturing, Kurnool",Artificial Intelligence & Data Science,Group 1,SC,266,266
+867,National Spot Round,"Indian Institute of Information Technology, Bhagalpur, Bihar",Artificial Intelligence & Data Science,Group 1,OBC-NCL,342,331
+868,National Spot Round,"Indian Institute of Information Technology, Bhagalpur, Bihar",Artificial Intelligence & Data Science,Group 1,OPEN,397,397
+Showing 1 to 868 of 868 entriesPrevious1Next,,,,,,,
+Terms and Conditions ,,,,,,,
+Hyperlink Policy ,,,,,,,
+Privacy Policy ,,,,,,,
+Copyright Policy ,,,,,,,
+Disclaimer ,,,,,,,
+Content Owned and Maintained by Centralized Counselling for M.Tech/M.Arch/M.Plan Admissions.,,,,,,,
+"Designed, Developed and Hosted by National Informatics Centre,",,,,,,,
+"Ministry of Electronics & Information Technology, Government of India",,,,,,,
+      ,,,,,,,

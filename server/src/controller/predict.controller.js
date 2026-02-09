@@ -115,7 +115,7 @@ export const predictColleges = async (req, res) => {
     const results = await JosaaSeat
       .find(query)
       .sort({ closingRank: 1 })
-      .limit(100);
+      .limit(500);
 
     console.log(`✅ Found ${results.length} results`);
 

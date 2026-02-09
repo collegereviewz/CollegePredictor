@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { predictColleges } from "../api/predict";
+import { EXAMS_CONFIG } from "../config/exam.config";
+
 
 const INDIA_STATES = [
   "Andhra Pradesh",
@@ -31,6 +33,17 @@ const INDIA_STATES = [
   "Uttarakhand",
   "West Bengal",
 ];
+// 🔹 GATE PAPERS (for UI only)
+const GATE_PAPERS = [
+  { label: "Computer Science (CS)", value: "CS" },
+  { label: "Electrical Engineering (EE)", value: "EE" },
+  { label: "Mechanical Engineering (ME)", value: "ME" },
+  { label: "Electronics & Communication (EC)", value: "EC" },
+  { label: "Civil Engineering (CE)", value: "CE" },
+  { label: "Chemical Engineering (CH)", value: "CH" },
+  { label: "Mathematics (MA)", value: "MA" },
+];
+
 
 const HomePage = () => {
   const [step, setStep] = useState(1);
@@ -40,12 +53,14 @@ const HomePage = () => {
 
 
   const [rank, setRank] = useState("");
+  const [gateScore, setGateScore] = useState(""); // 🔹 GATE only
+  const [gatePaper, setGatePaper] = useState(null); // 🔹 CS / EE / ME
   const [category, setCategory] = useState("GEN");
   const [domicile, setDomicile] = useState("");
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
   // 🔹 FILTER STATES
-  const [filterChance, setFilterChance] = useState(["Safe", "Moderate"]);
+  const [filterChance, setFilterChance] = useState(["Safe", "Moderate", "Dream"]);
   const [filterQuota, setFilterQuota] = useState(["AI", "HS"]);
   const [filterBranch, setFilterBranch] = useState([]);
   const [filterLocation, setFilterLocation] = useState([]);
@@ -53,6 +68,20 @@ const HomePage = () => {
 
   const [currentPage, setCurrentPage] = useState(1);
   const ITEMS_PER_PAGE = 20;
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [results]);
+
+
+  useEffect(() => {
+    if (selectedExam === "GATE") {
+      setFilterChance(["Safe", "Moderate", "Dream"]);
+    } else {
+      setFilterChance(["Safe", "Moderate"]);
+    }
+  }, [selectedExam]);
+
 
 
 
@@ -113,7 +142,7 @@ const HomePage = () => {
     btech: [
       { name: "JEE Main", code: "JEE_MAIN", description: "National-level engineering entrance (NTA)" },
       { name: "JEE Advanced", code: "JEE_ADV", description: "Entrance for IITs (via JEE Main shortlist)" },
-      { name: "WBJEE / State CET", code: "STATE_ENGG", description: "Example state-level engineering entrance" },
+      { name: "WBJEE", code: "WBJEE", description: "Example state-level engineering entrance" },
     ],
     mba: [
       { name: "CAT", code: "CAT", description: "Common Admission Test for IIMs and top B-schools" },
@@ -166,51 +195,169 @@ const HomePage = () => {
     setStep(3);
   };
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   setLoading(true);
+
+  //   try {
+  //     const payload = {
+  //       rank: Number(rank),
+  //       exam: selectedExam,
+  //       category:
+  //         category === "GEN"
+  //           ? "OPEN"
+  //           : category === "GEN-EWS"
+  //             ? "EWS"
+  //             : category,
+  //       gender: "Gender-Neutral",
+  //       domicile,
+  //       counselling: "JOSAA",
+  //       rounds: counselling === "CSAB" ? [1, 2, 3] : [1, 2, 3, 4, 5, 6],
+  //     };
+
+  //     // ✅ WBJEE uses NEW endpoint + SIMPLIFIED payload (4 fields only)
+  //     let data;
+  //     if (selectedExam === "GATE") {
+  //       if (!gatePaper || !gateScore) {
+  //         alert("Please select GATE paper and enter score");
+  //         setLoading(false);
+  //         return;
+  //       }
+
+  //       const gatePayload = {
+  //         gateScore: Number(gateScore),
+  //         academicProgram: gatePaper, // CS / EE / ME
+  //         category:
+  //           category === "GEN" ? "OPEN" :
+  //             category === "GEN-EWS" ? "EWS" : category,
+  //         gender: "Gender-Neutral",
+  //         domicile
+  //       };
+
+  //       const res = await fetch("http://localhost:5000/api/gate/predict", {
+  //         method: "POST",
+  //         headers: { "Content-Type": "application/json" },
+  //         body: JSON.stringify(gatePayload)
+  //       });
+
+  //       if (!res.ok) throw new Error("GATE prediction failed");
+  //       data = await res.json();
+  //     } else if (selectedExam === "STATE_ENGG" || selectedExam === "WBJEE") {
+  //       const wbjeePayload = {
+  //         rank: Number(rank),
+  //         exam: "WBJEE",
+  //         category: category === "GEN" ? "Open" : category,
+  //         domicile
+  //       };
+  //       const res = await fetch('http://localhost:5000/api/wbjee/predict', {
+  //         method: 'POST',
+  //         headers: { 'Content-Type': 'application/json' },
+  //         body: JSON.stringify(wbjeePayload)
+  //       });
+  //       if (!res.ok) throw new Error('WBJEE prediction failed');
+  //       data = await res.json();
+  //     } else {
+  //       // JEE_MAIN/JEE_ADV use old endpoint
+  //       data = await predictColleges(payload);
+  //     }
+
+  //     setResults(data);
+  //     setShowResults(true);
+  //     console.log("Prediction results:", data);
+  //   } catch (err) {
+  //     console.error(err);
+  //     alert("Failed to fetch predictions");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     setLoading(true);
 
     try {
-      const payload = {
-        rank: Number(rank),
-        exam: selectedExam,
-        category:
-          category === "GEN"
-            ? "OPEN"
-            : category === "GEN-EWS"
-              ? "EWS"
-              : category,
-        gender: "Gender-Neutral",
-        domicile,
-        counselling: "JOSAA",
-        rounds: counselling === "CSAB" ? [1, 2, 3] : [1, 2, 3, 4, 5, 6],
-      };
+      const examConfig = EXAMS_CONFIG[selectedExam];
+      if (!examConfig) throw new Error("Unsupported exam");
 
-      // ✅ WBJEE uses NEW endpoint + SIMPLIFIED payload (4 fields only)
-      let data;
-      if (selectedExam === "STATE_ENGG" || selectedExam === "WBJEE") {
-        const wbjeePayload = {
-          rank: Number(rank),
-          exam: "WBJEE",
-          category: category === "GEN" ? "Open" : category,
-          domicile
-        };
-        const res = await fetch('http://localhost:5000/api/wbjee/predict', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(wbjeePayload)
-        });
-        if (!res.ok) throw new Error('WBJEE prediction failed');
-        data = await res.json();
-      } else {
-        // JEE_MAIN/JEE_ADV use old endpoint
-        data = await predictColleges(payload);
+      // Validate required fields
+      if (examConfig.requires?.gatePaper && !gatePaper) {
+        alert("Please select GATE paper");
+        return;
       }
 
-      setResults(data);
+      const payload = examConfig.buildPayload({
+        rank,
+        gateScore,
+        gatePaper,
+        category:
+          selectedExam === "WBJEE"
+            ? (category === "GEN" ? "Open" : category)
+            : (category === "GEN" ? "OPEN"
+              : category === "GEN-EWS" ? "EWS"
+                : category),
+        domicile,
+        rounds: counselling === "CSAB" ? [1, 2, 3] : [1, 2, 3, 4, 5, 6]
+      });
+
+      let data;
+
+      if (examConfig.endpoint === "INTERNAL") {
+        data = await predictColleges(payload);
+      } else {
+        const res = await fetch(`http://localhost:5000${examConfig.endpoint}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        if (!res.ok) throw new Error("Prediction failed");
+        data = await res.json();
+      }
+
+      const normalizedData = data.map(row => {
+        const cfg = EXAMS_CONFIG[selectedExam];
+
+        // GATE
+        if (selectedExam === "GATE") {
+          return {
+            institute: row.institute,
+            academicProgram: row.academicProgram,
+            openingRank: row.minGateScore,
+            closingRank: row.maxGateScore,
+            quota: null,          // ❗ GATE has NO quota
+            round: 1,
+            _meta: { exam: "GATE" }
+          };
+        }
+
+        // WBJEE
+        if (selectedExam === "WBJEE") {
+          return {
+            institute: row.institute,
+            academicProgram: row.academicProgram,
+            openingRank: row.openingRank,
+            closingRank: row.closingRank,
+            quota: "STATE",
+            round: 1,
+            _meta: { exam: "WBJEE" }
+          };
+        }
+
+        // JEE / others
+        return {
+          institute: row.institute,
+          academicProgram: row.academicProgram,
+          openingRank: row.openingRank,
+          closingRank: row.closingRank,
+          quota: row.quota,
+          round: row.round,
+          _meta: { exam: selectedExam }
+        };
+      });
+
+      setResults(normalizedData);
       setShowResults(true);
-      console.log("Prediction results:", data);
     } catch (err) {
       console.error(err);
       alert("Failed to fetch predictions");
@@ -219,28 +366,35 @@ const HomePage = () => {
     }
   };
 
+  // ================================
+  // 🔧 GROUP RESULTS (EXAM-AGNOSTIC)
+  // ================================
   const groupedResults = Object.values(
     results.reduce((acc, row) => {
-      const key = `${row.institute}__${row.academicProgram}__${row.quota}`;
+      const key = `${row.institute}__${row.academicProgram}`;
 
       if (!acc[key]) {
         acc[key] = {
           ...row,
           rounds: [row.round],
-          openingRank: row.openingRank,
-          closingRank: row.closingRank,
         };
       } else {
         acc[key].rounds.push(row.round);
-        acc[key].openingRank = Math.min(acc[key].openingRank, row.openingRank);
-        acc[key].closingRank = Math.max(acc[key].closingRank, row.closingRank);
+        acc[key].openingRank = Math.min(
+          acc[key].openingRank ?? Infinity,
+          row.openingRank ?? Infinity
+        );
+        acc[key].closingRank = Math.max(
+          acc[key].closingRank ?? 0,
+          row.closingRank ?? 0
+        );
       }
 
       return acc;
     }, {})
-
-
   );
+
+
   // const finalResults = groupedResults.map(row => {
   //   let chance = "Dream";
 
@@ -252,35 +406,82 @@ const HomePage = () => {
   //     chance
   //   };
   // });
+  // const finalResults = groupedResults
+  //   .map(row => {
+  //     let chance = "Dream";
+
+  //     if (selectedExam === "GATE") {
+  //       // GATE uses SCORE
+  //       if (gateScore >= row.minGateScore + 30) chance = "Safe";
+  //       else if (gateScore >= row.minGateScore) chance = "Moderate";
+  //     } else {
+  //       // Rank-based exams (JEE/WBJEE/etc)
+  //       if (rank <= row.closingRank * 0.7) chance = "Safe";
+  //       else if (rank <= row.closingRank) chance = "Moderate";
+  //     }
+
+  //     return { ...row, chance };
+  //   })
+
+  //   // 🔹 FILTERING
+  //   .filter(row => {
+  //     if (!filterChance.includes(row.chance)) return false;
+  //     if (filterQuota.length && !filterQuota.includes(row.quota)) return false;
+  //     if (filterBranch.length > 0 && !filterBranch.includes(row.academicProgram)) return false;
+  //     const rowLocation = extractLocation(row.institute);
+  //     if (filterLocation.length > 0 && !filterLocation.includes(rowLocation)) return false;
+  //     return true;
+  //   })
+  //   // 🔹 SORT: SAFE → MODERATE → DREAM
+  //   .sort((a, b) => {
+  //     const order = { Safe: 1, Moderate: 2, Dream: 3 };
+  //     return order[a.chance] - order[b.chance];
+  //   });
+
+  const examConfig = EXAMS_CONFIG[selectedExam];
+
   const finalResults = groupedResults
-    .map(row => {
-      let chance = "Dream";
-
-      if (rank <= row.closingRank * 0.7) chance = "Safe";
-      else if (rank <= row.closingRank) chance = "Moderate";
-
-      return { ...row, chance };
-    })
-    // 🔹 FILTERING
+    .map(row => ({
+      ...row,
+      chance: examConfig.chanceLogic(
+        examConfig.inputType === "score"
+          ? { gateScore, minGateScore: row.openingRank }
+          : { rank, closingRank: row.closingRank }
+      )
+    }))
     .filter(row => {
       if (!filterChance.includes(row.chance)) return false;
-      if (filterQuota.length && !filterQuota.includes(row.quota)) return false;
-      if (filterBranch.length > 0 && !filterBranch.includes(row.academicProgram)) return false;
-      const rowLocation = extractLocation(row.institute);
 
+      // quota ONLY for rank-based exams
       if (
-        filterLocation.length > 0 &&
-        !filterLocation.includes(rowLocation)
+        ["JEE_MAIN", "JEE_ADV"].includes(selectedExam) &&
+        filterQuota.length &&
+        row.quota &&
+        !filterQuota.includes(row.quota)
       ) return false;
 
+      if (filterBranch.length && !filterBranch.includes(row.academicProgram)) return false;
+
+      const loc = extractLocation(row.institute);
+      if (filterLocation.length && !filterLocation.includes(loc)) return false;
 
       return true;
     })
-    // 🔹 SORT: SAFE → MODERATE → DREAM
-    .sort((a, b) => {
-      const order = { Safe: 1, Moderate: 2, Dream: 3 };
-      return order[a.chance] - order[b.chance];
-    });
+    .sort(
+      (a, b) =>
+      ({ Safe: 1, Moderate: 2, Dream: 3 }[a.chance] -
+        { Safe: 1, Moderate: 2, Dream: 3 }[b.chance])
+    );
+
+
+
+
+  // ✅ PAGINATION
+  const totalPages = Math.ceil(finalResults.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = startIndex + ITEMS_PER_PAGE;
+  const paginatedResults = finalResults.slice(startIndex, endIndex);
+
 
   const branchOptions = Array.from(
     new Set(results.map(r => r.academicProgram))
@@ -652,18 +853,40 @@ const HomePage = () => {
                     </div>
 
                     <div>
-                      <label className="block text-xs font-medium text-slate-700 mb-1">
-                        All India Rank
-                      </label>
-                      <input
-                        type="number"
-                        min={1}
-                        value={rank}
-                        onChange={(e) => setRank(e.target.value)}
-                        placeholder="Enter your rank in this exam"
-                        className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                        required
-                      />
+                      {/* 🔹 GATE SCORE INPUT */}
+                      {selectedExam === "GATE" ? (
+                        <div>
+                          <label className="block text-xs font-medium text-slate-700 mb-1">
+                            GATE Score
+                          </label>
+                          <input
+                            type="number"
+                            min={0}
+                            max={1000}
+                            value={gateScore}
+                            onChange={(e) => setGateScore(e.target.value)}
+                            placeholder="Enter your GATE score"
+                            className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                            required
+                          />
+                        </div>
+                      ) : (
+                        <div>
+                          <label className="block text-xs font-medium text-slate-700 mb-1">
+                            All India Rank
+                          </label>
+                          <input
+                            type="number"
+                            min={1}
+                            value={rank}
+                            onChange={(e) => setRank(e.target.value)}
+                            placeholder="Enter your rank"
+                            className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                            required
+                          />
+                        </div>
+                      )}
+
                     </div>
 
                     <div>
@@ -702,6 +925,32 @@ const HomePage = () => {
                         ))}
                       </select>
                     </div>
+                    {/* 🔹 GATE PAPER SELECTION */}
+                    {selectedExam === "GATE" && (
+                      <div>
+                        <label className="block text-xs font-medium text-slate-700 mb-2">
+                          Select Preferred GATE Paper
+                        </label>
+
+                        <div className="flex flex-wrap gap-2">
+                          {GATE_PAPERS.map(paper => (
+                            <button
+                              key={paper.value}
+                              type="button"
+                              onClick={() => setGatePaper(paper.value)}
+                              className={`px-3 py-1.5 rounded-full border text-xs font-medium transition
+            ${gatePaper === paper.value
+                                  ? "bg-blue-600 text-white border-blue-600"
+                                  : "bg-white text-slate-700 border-slate-300 hover:border-blue-400"}
+          `}
+                            >
+                              {paper.label}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
 
                     <div className="flex items-center gap-3 pt-2">
                       <button
@@ -815,7 +1064,7 @@ const HomePage = () => {
                       </div>
                     ) : (
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {finalResults.map((row, idx) => (
+                        {paginatedResults.map((row, idx) => (
                           <div
                             key={idx}
                             className="border border-slate-200 rounded-lg p-5 bg-white shadow-sm hover:shadow-md transition"
@@ -833,12 +1082,15 @@ const HomePage = () => {
                             {/* Meta */}
                             <div className="flex flex-wrap items-center gap-3 mt-3 text-xs text-slate-600">
                               <span className="px-2 py-0.5 border rounded">
-                                {selectedExam === "WBJEE"
-                                  ? "WBJEE"
-                                  : selectedExam === "JEE_ADV"
-                                    ? "JEE Advanced"
-                                    : "JEE Main"}
+                                {selectedExam === "GATE"
+                                  ? "GATE"
+                                  : selectedExam === "WBJEE"
+                                    ? "WBJEE"
+                                    : selectedExam === "JEE_ADV"
+                                      ? "JEE Advanced"
+                                      : "JEE Main"}
                               </span>
+
 
                               <span
                                 className={`px-2 py-0.5 rounded-full font-medium ${row.quota === "HS"
@@ -849,6 +1101,9 @@ const HomePage = () => {
                                 {row.quota}
                               </span>
                             </div>
+
+
+
 
                             {/* Cutoff */}
                             <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
@@ -879,9 +1134,55 @@ const HomePage = () => {
                               >
                                 {row.chance}
                               </span>
+                              {/* <h1>HELLO</h1> */}
                             </div>
+
                           </div>
+
                         ))}
+                        {/* PAGINATION (FIXED – RENDER ONCE) */}
+                        {totalPages > 1 && (
+                          <div className="mt-12 flex items-center justify-center space-x-2 border-t pt-8">
+                            <button
+                              onClick={() => setCurrentPage(p => Math.max(p - 1, 1))}
+                              disabled={currentPage === 1}
+                              className="px-3 py-1.5 text-sm font-medium rounded-md border border-slate-300 bg-white text-slate-700 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                            >
+                              ← Prev
+                            </button>
+
+                            {Array.from({ length: totalPages }, (_, i) => i + 1)
+                              .slice(
+                                Math.max(0, currentPage - 3),
+                                Math.min(totalPages, currentPage + 2)
+                              )
+                              .map(pageNum => (
+                                <button
+                                  key={pageNum}
+                                  onClick={() => setCurrentPage(pageNum)}
+                                  className={`px-3 py-1.5 text-sm font-medium rounded-md transition ${currentPage === pageNum
+                                    ? "bg-blue-600 text-white shadow-sm"
+                                    : "border border-slate-300 bg-white text-slate-700 hover:bg-slate-50"
+                                    }`}
+                                >
+                                  {pageNum}
+                                </button>
+                              ))}
+
+                            <button
+                              onClick={() => setCurrentPage(p => Math.min(p + 1, totalPages))}
+                              disabled={currentPage === totalPages}
+                              className="px-3 py-1.5 text-sm font-medium rounded-md border border-slate-300 bg-white text-slate-700 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                            >
+                              Next →
+                            </button>
+
+                            <span className="text-sm text-slate-500 px-3">
+                              Page {currentPage} of {totalPages} ({finalResults.length} colleges)
+                            </span>
+                          </div>
+                        )}
+
                       </div>
                     )}
                   </>
